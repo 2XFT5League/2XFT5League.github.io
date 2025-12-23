@@ -623,8 +623,8 @@
     "id_partido": "2025-J13-P04-sheriff-vs-only",
     "p1": "Sheriff",
     "p2": "Only",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5096"
   },
   {
@@ -671,8 +671,8 @@
     "id_partido": "2025-J14-P04-only-vs-kepasaco",
     "p1": "Only",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5100"
   },
   {
@@ -683,8 +683,8 @@
     "id_partido": "2026-J01-P01-pof-vs-marcade",
     "p1": "Pof",
     "p2": "Marcade",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -695,8 +695,8 @@
     "id_partido": "2026-J01-P02-ricky-vs-kepasaco",
     "p1": "Ricky",
     "p2": "Kepasaco",
-    "marcadorp1": 5,
-    "marcadorp2": 3,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -707,8 +707,8 @@
     "id_partido": "2026-J02-P01-redspecial-vs-pof",
     "p1": "RedSpecial",
     "p2": "Pof",
-    "marcadorp1": 5,
-    "marcadorp2": 2,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -719,8 +719,8 @@
     "id_partido": "2026-J02-P02-marcade-vs-ricky",
     "p1": "Marcade",
     "p2": "Ricky",
-    "marcadorp1": 3,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -731,8 +731,8 @@
     "id_partido": "2026-J03-P01-kepasaco-vs-redspecial",
     "p1": "Kepasaco",
     "p2": "RedSpecial",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -743,8 +743,8 @@
     "id_partido": "2026-J03-P02-pof-vs-ricky",
     "p1": "Pof",
     "p2": "Ricky",
-    "marcadorp1": 4,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -755,8 +755,8 @@
     "id_partido": "2026-J04-P01-redspecial-vs-ricky",
     "p1": "RedSpecial",
     "p2": "Ricky",
-    "marcadorp1": 2,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -767,8 +767,8 @@
     "id_partido": "2026-J04-P02-marcade-vs-kepasaco",
     "p1": "Marcade",
     "p2": "Kepasaco",
-    "marcadorp1": 5,
-    "marcadorp2": 2,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -779,8 +779,8 @@
     "id_partido": "2026-J05-P01-marcade-vs-redspecial",
     "p1": "Marcade",
     "p2": "RedSpecial",
-    "marcadorp1": 5,
-    "marcadorp2": 3,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -791,8 +791,8 @@
     "id_partido": "2026-J05-P02-kepasaco-vs-pof",
     "p1": "Kepasaco",
     "p2": "Pof",
-    "marcadorp1": 4,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -803,8 +803,8 @@
     "id_partido": "2026-J06-P01-marcade-vs-pof",
     "p1": "Marcade",
     "p2": "Pof",
-    "marcadorp1": 4,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -815,8 +815,8 @@
     "id_partido": "2026-J06-P02-kepasaco-vs-ricky",
     "p1": "Kepasaco",
     "p2": "Ricky",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -827,8 +827,8 @@
     "id_partido": "2026-J07-P01-pof-vs-redspecial",
     "p1": "Pof",
     "p2": "RedSpecial",
-    "marcadorp1": 5,
-    "marcadorp2": 3,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -839,8 +839,8 @@
     "id_partido": "2026-J07-P02-ricky-vs-marcade",
     "p1": "Ricky",
     "p2": "Marcade",
-    "marcadorp1": 3,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -851,8 +851,8 @@
     "id_partido": "2026-J08-P01-redspecial-vs-kepasaco",
     "p1": "RedSpecial",
     "p2": "Kepasaco",
-    "marcadorp1": 0,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -863,8 +863,8 @@
     "id_partido": "2026-J08-P02-ricky-vs-pof",
     "p1": "Ricky",
     "p2": "Pof",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -875,8 +875,8 @@
     "id_partido": "2026-J09-P01-ricky-vs-redspecial",
     "p1": "Ricky",
     "p2": "RedSpecial",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -887,8 +887,8 @@
     "id_partido": "2026-J09-P02-kepasaco-vs-marcade",
     "p1": "Kepasaco",
     "p2": "Marcade",
-    "marcadorp1": 4,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -899,8 +899,8 @@
     "id_partido": "2026-J10-P01-redspecial-vs-marcade",
     "p1": "RedSpecial",
     "p2": "Marcade",
-    "marcadorp1": 3,
-    "marcadorp2": 5,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   },
   {
@@ -911,8 +911,8 @@
     "id_partido": "2026-J10-P02-pof-vs-kepasaco",
     "p1": "Pof",
     "p2": "Kepasaco",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": ""
   }
 ]
