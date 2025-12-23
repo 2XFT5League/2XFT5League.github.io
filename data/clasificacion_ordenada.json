@@ -1,0 +1,110 @@
+[
+  {
+    "_meta": "temporada_activa",
+    "valor": 2025
+  },
+  {
+    "temporada": 2025,
+    "posicion": 1,
+    "jugador": "Marcade",
+    "pj": 13,
+    "pg": 9,
+    "pp": 4,
+    "dif_p": 5,
+    "cg": 60,
+    "cp": 49,
+    "dif_c": 11,
+    "puntos": 105
+  },
+  {
+    "temporada": 2025,
+    "posicion": 2,
+    "jugador": "Only",
+    "pj": 12,
+    "pg": 9,
+    "pp": 3,
+    "dif_p": 6,
+    "cg": 56,
+    "cp": 41,
+    "dif_c": 15,
+    "puntos": 101
+  },
+  {
+    "temporada": 2025,
+    "posicion": 3,
+    "jugador": "Sheriff",
+    "pj": 12,
+    "pg": 9,
+    "pp": 3,
+    "dif_p": 6,
+    "cg": 56,
+    "cp": 50,
+    "dif_c": 6,
+    "puntos": 101
+  },
+  {
+    "temporada": 2025,
+    "posicion": 4,
+    "jugador": "Ricky",
+    "pj": 13,
+    "pg": 8,
+    "pp": 5,
+    "dif_p": 3,
+    "cg": 59,
+    "cp": 55,
+    "dif_c": 4,
+    "puntos": 99
+  },
+  {
+    "temporada": 2025,
+    "posicion": 5,
+    "jugador": "Kepasaco",
+    "pj": 13,
+    "pg": 6,
+    "pp": 7,
+    "dif_p": -1,
+    "cg": 58,
+    "cp": 56,
+    "dif_c": 2,
+    "puntos": 88
+  },
+  {
+    "temporada": 2025,
+    "posicion": 6,
+    "jugador": "RedSpecial",
+    "pj": 13,
+    "pg": 5,
+    "pp": 8,
+    "dif_p": -3,
+    "cg": 50,
+    "cp": 58,
+    "dif_c": -8,
+    "puntos": 75
+  },
+  {
+    "temporada": 2025,
+    "posicion": 7,
+    "jugador": "Sepia",
+    "pj": 13,
+    "pg": 3,
+    "pp": 10,
+    "dif_p": -7,
+    "cg": 49,
+    "cp": 62,
+    "dif_c": -13,
+    "puntos": 64
+  },
+  {
+    "temporada": 2025,
+    "posicion": 8,
+    "jugador": "Pof",
+    "pj": 13,
+    "pg": 2,
+    "pp": 11,
+    "dif_p": -9,
+    "cg": 46,
+    "cp": 63,
+    "dif_c": -17,
+    "puntos": 56
+  }
+]
