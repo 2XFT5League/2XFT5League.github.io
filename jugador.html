@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>2X FT5 League – Jugador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">2X FT5 League</h1>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main-jugador">
+    <!-- ==========================
+         PERFIL DEL JUGADOR
+         ========================== -->
+    <section class="panel panel-jugador-info">
+      <div class="panel-header panel-header-left">
+        <!-- El encabezado del módulo será el nombre del jugador -->
+        <h2 id="jugador-panel-titulo" class="panel-title">Cargando...</h2>
+      </div>
+
+      <div id="jugador-contenido" class="jugador-perfil">
+        <div class="jugador-perfil-izquierda">
+          <div class="jugador-perfil-datos">
+            <p style="margin:2px 0;" class="jugador-fightcade-linea">
+              <img src="img/fightcade.png" alt="Fightcade" class="icon-fightcade">
+              <span class="jugador-perfil-etiqueta">Fightcade ID:</span>
+              <span id="jugador-fightcade">-</span>
+            </p>
+
+            <!-- WhatsApp: icono + palabra "Whatsapp" como enlace -->
+            <p id="jugador-whatsapp-linea" style="margin:2px 0;" class="jugador-whatsapp-linea">
+              <img src="img/whatsapp.png" alt="WhatsApp" class="icon-whatsapp">
+              <a id="jugador-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                Whatsapp
+              </a>
+              <span id="jugador-whatsapp-texto-plano">-</span>
+            </p>
+
+            <!-- Disponibilidad SIEMPRE visible: texto o "-" -->
+            <p id="jugador-disponibilidad-linea" style="margin:2px 0;">
+              <span class="jugador-perfil-etiqueta">Disponibilidad:</span>
+              <span id="jugador-disponibilidad">-</span>
+            </p>
+          </div>
+
+          <div class="jugador-personajes">
+            <img id="jugador-personaje1" src="" alt="Personaje 1" class="avatar-personaje">
+            <img id="jugador-personaje2" src="" alt="Personaje 2" class="avatar-personaje">
+          </div>
+        </div>
+
+        <img id="jugador-avatar" src="img/default.png" alt="Avatar" class="avatar-jugador">
+      </div>
+    </section>
+
+    <!-- ==========================
+         TEMPORADA (RESUMEN + BARRAS)
+         ========================== -->
+    <section class="panel panel-jugador-clasificacion">
+      <div class="panel-header panel-header-left">
+        <h2 id="temporada-titulo" class="panel-title">Temporada</h2>
+      </div>
+
+      <div id="jugador-clasificacion" class="jugador-resumen">
+        <p style="margin:4px 0;">
+          <span class="jugador-perfil-etiqueta">Posición:</span>
+          <span id="jugador-posicion" class="badge-posicion">-</span>
+        </p>
+
+        <p style="margin:4px 0;">
+          <span class="jugador-perfil-etiqueta">Puntos:</span>
+          <span id="jugador-puntos">-</span>
+        </p>
+
+        <div class="resumen-barras" id="jugador-barras" style="display:none;">
+          <div class="barra-grupo">
+            <div class="barra-titulo">
+              <span class="jugador-perfil-etiqueta">FT5</span>
+              <span class="barra-datos" id="barra-ft5-datos">-</span>
+            </div>
+            <div class="barra-base">
+              <div class="barra-win" id="barra-ft5-win" style="width:0%;"></div>
+              <div class="barra-lose" id="barra-ft5-lose" style="width:0%;"></div>
+            </div>
+            <div class="barra-texto" id="barra-ft5-texto">Sin datos aún</div>
+          </div>
+
+          <div class="barra-grupo">
+            <div class="barra-titulo">
+              <span class="jugador-perfil-etiqueta">Combates</span>
+              <span class="barra-datos" id="barra-combates-datos">-</span>
+            </div>
+            <div class="barra-base">
+              <div class="barra-win" id="barra-combates-win" style="width:0%;"></div>
+              <div class="barra-lose" id="barra-combates-lose" style="width:0%;"></div>
+            </div>
+            <div class="barra-texto" id="barra-combates-texto">Sin datos aún</div>
+          </div>
+        </div>
+
+        <p id="jugador-sin-clasificacion" style="margin:6px 0; display:none;">
+          Este jugador todavía no tiene datos en la clasificación.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================
+         PRÓXIMO ENFRENTAMIENTO
+         ========================== -->
+    <section class="panel panel-jugador-proximo">
+      <div class="panel-header panel-header-left">
+        <h2 class="panel-title">Próximo enfrentamiento</h2>
+      </div>
+
+      <div id="jugador-proximo" class="jugador-proximo">
+        <p>Cargando próximo enfrentamiento...</p>
+      </div>
+    </section>
+
+    <!-- ==========================
+         CALENDARIO PERSONAL
+         ========================== -->
+    <section class="panel panel-jugador-calendario">
+      <div class="panel-header panel-header-left">
+        <h2 class="panel-title">Calendario personal</h2>
+      </div>
+
+      <div id="jugador-calendario" class="jugador-calendario">
+        <p>Cargando calendario...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2X FT5 League · Página de jugador</p>
+  </footer>
+
+  <script src="jugador.js"></script>
+</body>
+</html>

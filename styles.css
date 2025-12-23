@@ -1,0 +1,1314 @@
+/* Estilo general oscuro tipo Fightcade (versión simple) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #141422;
+  color: #f5f5f5;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #181828, #252545);
+  border-bottom: 1px solid #303050;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* título a la izquierda, nav a la derecha */
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Selector de temporada (HOME) – discreto en el header */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.temporada-label {
+  font-size: 12px;
+  opacity: 0.75;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.temporada-select {
+  background-color: #252545;
+  color: #f0f0ff;
+  border: 1px solid #3a3a70;
+  border-radius: 6px;
+  height: 28px;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.temporada-select:hover {
+  background-color: #303065;
+}
+
+.temporada-select:focus {
+  border-color: #57c7ff;
+}
+
+/* En móvil, que no “rompa” el header */
+@media (max-width: 600px) {
+  .header-controls {
+    margin-top: 6px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .temporada-label {
+    display: none; /* aún más discreto en móvil */
+  }
+}
+
+/* Layout principal (HOME) */
+.main {
+  max-width: 1200px;
+  margin: 16px auto 32px;
+  padding: 0 16px;
+  display: grid;
+
+  /* Jornada y Clasificación con el MISMO ancho */
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: auto;
+  gap: 16px;
+}
+
+.panel {
+  background-color: #1c1c2e;
+  border: 1px solid #303050;
+  border-radius: 8px;
+  padding: 12px 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.panel-jornada {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.panel-clasificacion {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  /* CLAVE: si la tabla no cabe, aparece la barra lateral */
+  overflow-x: auto;
+}
+
+/* Cabeceras de panel */
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: center; /* centra JORNADA X y el rango en 2 líneas */
+}
+
+/* Nombre del jugador (título del panel de perfil) */
+#jugador-panel-titulo {
+  font-size: 24px;     /* más grande que el resto de títulos */
+  letter-spacing: 0.04em; /* más natural para un nombre propio */
+}
+
+/* SOLO el título del panel de perfil del jugador (el nombre).
+   El resto de títulos de módulos en la página de jugador se quedan en mayúsculas. */
+#jugador-panel-titulo {
+  text-transform: none;
+}
+
+.jornada-rango {
+  display: block;
+  font-size: 12px;     /* más pequeño que el título */
+  font-weight: normal;
+  opacity: 0.75;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+
+/* Botones de navegación de jornada */
+.nav-btn {
+  background-color: #252545;
+  color: #f0f0ff;
+  border: 1px solid #3a3a70;
+  border-radius: 4px;
+  width: 32px;
+  height: 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.nav-btn:hover {
+  background-color: #303065;
+}
+
+/* Lista de partidos */
+.lista-partidos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.partido {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: radial-gradient(circle at top, #22223a 0, #161624 55%);
+  border: 1px solid #242448;
+  font-size: 14px;
+}
+
+.partido:nth-child(odd) {
+  background: radial-gradient(circle at top, #1e1e34 0, #141420 55%);
+}
+
+/* Jugadores dentro del partido */
+.jugador {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0; /* permite ellipsis correcto dentro de grid */
+}
+
+.jugador-izq {
+  justify-content: flex-start;
+}
+
+.jugador-der {
+  justify-content: flex-end;
+}
+
+.jugador-der .nombre {
+  text-align: right;
+}
+
+/* Avatares (jugadores) */
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #44446a;
+  flex-shrink: 0;
+}
+
+/* SOLO ESCRITORIO: avatares de jugador un poco más grandes
+   (no afecta a iconos ni personajes ni avatar grande del perfil) */
+@media (min-width: 821px) {
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.nombre {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Resultado */
+.resultado {
+  text-align: center;
+  min-width: 70px;
+  font-weight: 600;
+}
+
+/* Tabla clasificación */
+.tabla-clasificacion {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  /* CLAVE: esto define cuándo aparece la barra (junto a overflow-x del panel) */
+  min-width: 420px;
+}
+
+.tabla-clasificacion thead {
+  background-color: #24243a;
+}
+
+.tabla-clasificacion th,
+.tabla-clasificacion td {
+  padding: 6px 6px;
+  vertical-align: middle; /* evita desalineaciones sutiles entre celdas */
+}
+
+/* Separador continuo por fila (solo clasificación, NO calendario) */
+.tabla-clasificacion:not(.tabla-calendario) tbody tr {
+  border-bottom: 1px solid #262640;
+}
+
+.tabla-clasificacion:not(.tabla-calendario) tbody td {
+  border-bottom: none; /* el borde NO va en el td */
+}
+
+/* En clasificación (no calendario), evitamos “baseline quirks” del avatar */
+.tabla-clasificacion:not(.tabla-calendario) .jugador-cell .avatar {
+  display: block; /* elimina el baseline inline que puede crear escalones */
+}
+
+/* Asegura que el bloque avatar+nombre quede alineado sin recortar descendentes (y, p, q, g) */
+.tabla-clasificacion:not(.tabla-calendario) .jugador-cell {
+  align-items: center;
+  line-height: 1.2; /* evita recortes en Windows */
+}
+
+.tabla-clasificacion th {
+  text-align: center; /* cabeceras centradas sobre sus datos */
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tabla-clasificacion tbody tr:nth-child(even) {
+  background-color: #181828;
+}
+
+.tabla-clasificacion tbody tr:hover {
+  background-color: #20203a;
+}
+
+/* ============================
+   TABLA CALENDARIO PERSONAL
+   Alineación EXACTA cabecera ↔ columna
+   + rango de jornada más pequeño
+   ============================ */
+
+.tabla-clasificacion.tabla-calendario th.cal-col-jornada,
+.tabla-clasificacion.tabla-calendario td.cal-col-jornada {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* FT5: cabecera centrada, datos a la izquierda */
+/* FT5 con anchura consistente y alineación perfecta (calendario personal) */
+.tabla-clasificacion.tabla-calendario th.cal-col-ft5 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 3 columnas: [P1] [vs] [P2] */
+.cal-ft5 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Base: icono + nombre alineados verticalmente */
+.cal-ft5-jugador {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0; /* necesario para que elipsis funcione dentro del grid */
+}
+
+/* Lado izquierdo: icono nombre */
+.cal-ft5-jugador:first-child {
+  justify-content: flex-start;
+}
+
+/* Lado derecho: nombre icono, alineado a la derecha */
+.cal-ft5-jugador:last-child {
+  justify-content: flex-end;
+}
+
+.cal-ft5-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #44446a;
+  flex: 0 0 auto;
+}
+
+.cal-ft5-nombre {
+  min-width: 0;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* El nombre del jugador derecho alineado a la derecha */
+.cal-ft5-jugador:last-child .cal-ft5-nombre {
+  text-align: right;
+}
+
+.cal-ft5-vs {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.tabla-clasificacion.tabla-calendario th.cal-col-resultado,
+.tabla-clasificacion.tabla-calendario td.cal-col-resultado {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Jornada en 2 líneas dentro de la celda */
+.tabla-clasificacion.tabla-calendario .cal-jornada-num {
+  display: block;
+}
+
+.tabla-clasificacion.tabla-calendario .cal-jornada-rango {
+  display: block;
+  font-size: 11px;
+  line-height: 1.2;
+  opacity: 0.65;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+/* Link de replay en el resultado (marcador clicable) */
+.calendario-resultado-link,
+.calendario-resultado-link:link,
+.calendario-resultado-link:visited,
+.calendario-resultado-link:hover,
+.calendario-resultado-link:active {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.posicion {
+  width: 24px;
+  text-align: right;
+}
+
+/* Jugador a la izquierda (intencionado) SOLO en la tabla de clasificación */
+.tabla-clasificacion:not(.tabla-calendario) th:nth-child(2),
+.tabla-clasificacion:not(.tabla-calendario) td:nth-child(2) {
+  text-align: left;
+}
+
+.jugador-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.jugador-cell .avatar {
+  /* Sin tamaño fijo: hereda el tamaño de .avatar.
+     Esto permite que el aumento SOLO ESCRITORIO funcione también en clasificación. */
+}
+
+/* Estrechar un poco FT5 y Combates */
+.tabla-clasificacion th:nth-child(4),
+.tabla-clasificacion td:nth-child(4),
+.tabla-clasificacion th:nth-child(5),
+.tabla-clasificacion td:nth-child(5) {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* Alineado vertical: números en columnas con ancho visual consistente */
+.td-puntos,
+.td-stats {
+  text-align: center;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Estructura interna FT5 / Combates */
+.stats {
+  display: inline-block;
+}
+
+.stats-pj {
+  display: inline-block;
+  min-width: 2ch;
+  text-align: right;
+}
+
+/* Centramos para que "FT5" quede centrado sobre PJ | resto */
+.stats-rest {
+  display: inline-block;
+  min-width: 12ch;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #303050;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #b0b0d0;
+}
+
+/* ===== Página de jugador ===== */
+
+.main-jugador {
+  max-width: 1000px;
+  margin: 16px auto 32px;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr;
+  grid-auto-rows: auto;
+  gap: 16px;
+}
+
+.panel-jugador-info {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.panel-jugador-clasificacion {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.panel-jugador-proximo {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.panel-jugador-calendario {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  overflow-x: auto;
+}
+
+.panel-header-left {
+  justify-content: flex-start;
+}
+
+.jugador-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.jugador-perfil-izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.jugador-perfil-datos h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.jugador-perfil-datos p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.jugador-perfil-etiqueta {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Fightcade ID / WhatsApp (icono + texto en línea) */
+.jugador-fightcade-linea,
+.jugador-whatsapp-linea {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-fightcade,
+.icon-whatsapp {
+  width: 22px;   /* mismo tamaño que .cal-ft5-avatar */
+  height: 22px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #44446a;
+  flex-shrink: 0;
+}
+
+.fightcade-link,
+.whatsapp-link {
+  text-decoration: none;
+}
+
+.jugador-personajes {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.avatar-jugador {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #44446a;
+  flex-shrink: 0;
+}
+
+/* Personajes cuadrados */
+.avatar-personaje {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  object-fit: initial;
+  border: none;
+  max-width: 100%;
+}
+
+/* Avatar grande solo en el módulo de perfil */
+.panel-jugador-info img.avatar-jugador {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #44446a;
+}
+
+/* Personajes: tamaño en el módulo de perfil */
+.panel-jugador-info img.avatar-personaje {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  object-fit: initial;
+  border: none;
+  max-width: 100%;
+}
+
+.jugador-resumen {
+  font-size: 14px;
+}
+
+.jugador-resumen p {
+  margin: 4px 0;
+}
+
+.jugador-proximo,
+.jugador-calendario {
+  font-size: 14px;
+}
+
+.jugador-proximo p,
+.jugador-calendario p {
+  margin: 4px 0;
+}
+
+/* ============================
+   BARRAS + BADGES (PÁGINA JUGADOR)
+   ============================ */
+
+.badge-posicion {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  border: 1px solid #3a3a70;
+  background-color: #252545;
+  color: #f0f0ff;
+  font-variant-numeric: tabular-nums;
+}
+
+.badge-posicion.badge-top1 {
+  border-color: #d6b85c;
+  background-color: #3a3220;
+  color: #ffe9a6;
+}
+
+.badge-posicion.badge-top8 {
+  border-color: #57c7ff;
+  background-color: #1b2a3a;
+  color: #cfefff;
+}
+
+.resumen-barras {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.barra-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.barra-titulo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.barra-datos {
+  opacity: 0.9;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.barra-base {
+  height: 20px;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  background-color: #141420;
+  border: 1px solid #242448;
+}
+
+.barra-win {
+  height: 100%;
+  background-color: #2f7d46;
+}
+
+.barra-lose {
+  height: 100%;
+  background-color: #7d2f2f;
+}
+
+.barra-texto {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* ===== Colores para resultados en calendario personal ===== */
+
+.resultado-win,
+a.resultado-win {
+  color: #7CFF7C;
+  font-weight: bold;
+}
+
+.resultado-lose,
+a.resultado-lose {
+  color: #FF6B6B;
+  font-weight: bold;
+}
+
+.resultado-pendiente,
+a.resultado-pendiente {
+  color: #CCCCFF;
+  font-style: italic;
+}
+
+.resultado-futuro,
+a.resultado-futuro {
+  color: #666688;
+  font-style: italic;
+}
+
+/* ============================
+   PRÓXIMO ENFRENTAMIENTO (ficha rival estilo "antiguo")
+   ============================ */
+
+.proximo-rival-bloque {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  font-size: 13px;
+}
+
+.proximo-rival-nombre {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.proximo-rival-dos-columnas {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 6px;
+}
+
+.proximo-rival-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.proximo-rival-clasificacion p,
+.proximo-rival-personajes p,
+.proximo-rival-historial p {
+  margin: 2px 0;
+}
+
+.proximo-rival-personajes-iconos {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.avatar-personaje-proximo {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  object-fit: initial;
+  border: none;
+  max-width: 100%;
+}
+
+.proximo-rival-historial {
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.resultado-ganado,
+a.resultado-ganado {
+  color: #4caf50;
+}
+
+.resultado-perdido,
+a.resultado-perdido {
+  color: #f44336;
+}
+
+/* ============================
+   HISTORIAL DIRECTO (multi-temporada) – Próximo rival
+   Formato:
+   2025: W-L / (CG-CP)
+         J7. 2-5
+   Temporada activa en rojo
+   ============================ */
+
+.historial-directo {
+  margin-top: 6px;
+}
+
+.hist-bloque-temporada {
+  margin-top: 8px;
+}
+
+.hist-linea-resumen {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.2;
+}
+
+.hist-temporada-activa {
+  color: #FF6B6B; /* temporada activa en rojo */
+}
+
+.hist-resumen {
+  opacity: 0.95;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.hist-lista-partidos {
+  margin-top: 2px;
+  margin-left: 22px; /* sangría como tu ejemplo */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hist-linea-partido {
+  display: flex;
+  gap: 6px;
+  line-height: 1.2;
+}
+
+.hist-jornada {
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.hist-marcador {
+  white-space: nowrap;
+}
+
+/* Responsive del bloque rival en móvil: apilar columnas */
+@media (max-width: 600px) {
+  .proximo-rival-dos-columnas {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ============================
+   LINKS (sin azul/violeta)
+   Nota: EXCLUIMOS el link del marcador del calendario para permitir colores win/lose
+   ============================ */
+a:not(.calendario-resultado-link),
+a:not(.calendario-resultado-link):link,
+a:not(.calendario-resultado-link):visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hover normal en links, EXCEPTO marcador del calendario */
+a:hover {
+  text-decoration: underline;
+}
+
+a.calendario-resultado-link:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: inherit;
+}
+
+/* ============================
+   RESPONSIVE (HOME + JUGADOR)
+   ============================ */
+
+/* HOME: 1 columna en móvil + tablet vertical */
+@media (max-width: 820px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .panel-jornada {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .panel-clasificacion {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .resultado {
+    min-width: 64px;
+  }
+}
+
+/* Ajustes finos para móvil */
+@media (max-width: 600px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .panel {
+    padding: 10px 10px 14px;
+  }
+
+  .partido {
+    font-size: 13px;
+    padding: 6px 6px;
+  }
+
+  .avatar {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* HOME – JORNADA (móvil): Pendiente -> Pte. */
+  .panel-jornada .resultado-pendiente {
+    font-size: 0;
+  }
+
+  .panel-jornada .resultado-pendiente::after {
+    content: "Pte.";
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  /* Compactación real antes del scroll */
+  .tabla-clasificacion {
+    font-size: 12px;
+    min-width: 260px; /* baja a 340 si quieres aún más */
+  }
+
+  .tabla-clasificacion th,
+  .tabla-clasificacion td {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .tabla-clasificacion th:nth-child(4),
+  .tabla-clasificacion td:nth-child(4),
+  .tabla-clasificacion th:nth-child(5),
+  .tabla-clasificacion td:nth-child(5) {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .stats-rest {
+    min-width: 8ch; /* baja a 9ch si quieres aún más */
+  }
+
+  .main-jugador {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-jugador-info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .panel-jugador-clasificacion {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .panel-jugador-proximo {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .panel-jugador-calendario {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .jugador-perfil {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* En móvil: el avatar del jugador sube arriba (justo debajo del nombre del panel) */
+  #jugador-avatar {
+    order: 1;
+    align-self: center;
+  }
+
+  .jugador-perfil-izquierda {
+    order: 2;
+    width: 100%;
+  }
+
+  .panel-jugador-info img.avatar-jugador {
+    width: 140px;
+    height: 140px;
+  }
+
+  .panel-jugador-info img.avatar-personaje {
+    width: auto;
+    height: auto;
+  }
+
+  .jornada-rango {
+   font-size: 13px;
+   font-weight: normal;
+   opacity: 0.85;
+   letter-spacing: 0.04em;
+  }
+}
+/* ============================
+   CALENDARIO PERSONAL – AJUSTES MÓVIL
+   (sin avatares, cabeceras compactas, máximo aprovechamiento de ancho)
+   ============================ */
+
+@media (max-width: 600px) {
+
+  /* ============================
+     FT5: compactación extrema
+     ============================ */
+
+  /* Quitar avatares en FT5 */
+  .tabla-clasificacion.tabla-calendario .cal-ft5-avatar {
+    display: none !important;
+  }
+
+  /* Eliminar espacios reales */
+  .tabla-clasificacion.tabla-calendario .cal-ft5 {
+    gap: 0 !important;
+  }
+
+  .tabla-clasificacion.tabla-calendario .cal-ft5-jugador {
+    gap: 0 !important;
+  }
+
+  /* Sustituir "vs" por "-" sin espacios */
+  .tabla-clasificacion.tabla-calendario .cal-ft5-vs {
+    font-size: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .tabla-clasificacion.tabla-calendario .cal-ft5-vs::before {
+    content: "-" !important;
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  /* Ajuste fino de nombres */
+  .tabla-clasificacion.tabla-calendario .cal-ft5-nombre {
+    max-width: 90px;
+  }
+
+  /* Ocultar rango de fechas de la jornada en MÓVIL */
+  .tabla-clasificacion.tabla-calendario .cal-jornada-rango {
+    display: none !important;
+  }
+
+  /* ============================
+     CABECERAS COMPACTAS
+     ============================ */
+
+  /* JORNADA -> J. */
+  .tabla-clasificacion.tabla-calendario th.cal-col-jornada {
+    font-size: 0;
+  }
+
+  .tabla-clasificacion.tabla-calendario th.cal-col-jornada::after {
+    content: "J.";
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* RESULTADO -> Res. */
+  .tabla-clasificacion.tabla-calendario th.cal-col-resultado {
+    font-size: 0;
+  }
+
+  .tabla-clasificacion.tabla-calendario th.cal-col-resultado::after {
+    content: "Res.";
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ============================
+     FILAS
+     ============================ */
+
+  /* Jornada: por defecto se muestra NORMAL ("Jornada 1") */
+  .tabla-clasificacion.tabla-calendario .cal-jornada-num {
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* SOLO si existe data-jornada se sustituye por versión compacta */
+  .tabla-clasificacion.tabla-calendario .cal-jornada-num[data-jornada] {
+    font-size: 0;
+  }
+
+  .tabla-clasificacion.tabla-calendario .cal-jornada-num[data-jornada]::after {
+    content: "J." attr(data-jornada);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Pendiente -> Pte. */
+  .tabla-clasificacion.tabla-calendario .resultado-pendiente {
+    font-size: 0;
+  }
+
+  .tabla-clasificacion.tabla-calendario .resultado-pendiente::after {
+    content: "Pte.";
+    font-size: 13px;
+    font-style: italic;
+  }
+
+}
+
+/* ============================
+   HOME – CLASIFICACIÓN: destacar #1 y Top 8 (sutil, tipo Fightcade)
+   ============================ */
+
+/* ===== TOP 1 (glow continuo por FILA) ===== */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1) {
+  background: linear-gradient(
+    90deg,
+    #201c14 0%,
+    #3b3120 50%,
+    #201c14 100%
+  ) !important;
+}
+
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1) td {
+  background: transparent !important; /* banda continua */
+}
+
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1) td:first-child {
+  border-left: 3px solid #bfa64a !important; /* dorado apagado */
+}
+
+/* ===== TOP 8 (2–8) – glow continuo por FILA (no por celda) ===== */
+
+/* Impar */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(odd) {
+  background: linear-gradient(
+    90deg,
+    #171e2e 0%,
+    #233257 50%,
+    #171e2e 100%
+  ) !important;
+}
+
+/* Par */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(even) {
+  background: linear-gradient(
+    90deg,
+    #161c2b 0%,
+    #202c4f 50%,
+    #161c2b 100%
+  ) !important;
+}
+
+/* CLAVE: td transparentes para que se vea el fondo del tr (banda continua) */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8) td {
+  background: transparent !important;
+}
+
+/* Barra izquierda Top 8 (muy discreta) */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8) td:first-child {
+  border-left: 3px solid #3f6f99 !important; /* azul apagado */
+}
+
+/* ===== Hover: realce sin “romper” el gradiente ===== */
+
+/* TOP 1 hover */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1):hover {
+  background: linear-gradient(
+    90deg,
+    #201c14 0%,
+    #4a3c25 50%,
+    #201c14 100%
+  ) !important;
+}
+
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1):hover td {
+  background: transparent !important;
+}
+
+/* TOP 8 hover (más brillo, sigue siendo banda continua) */
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(odd):hover {
+  background: linear-gradient(
+    90deg,
+    #171e2e 0%,
+    #2a3b68 50%,
+    #171e2e 100%
+  ) !important;
+}
+
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(even):hover {
+  background: linear-gradient(
+    90deg,
+    #161c2b 0%,
+    #263761 50%,
+    #161c2b 100%
+  ) !important;
+}
+
+.panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):hover td {
+  background: transparent !important;
+}
+
+/* ============================
+   HOME: tema rojizo cuando la temporada vista NO es la activa
+   (mantiene jerarquía y contraste del tema azul)
+   ============================ */
+
+body.tema-temporada-no-activa {
+  background-color: #1f1216;
+}
+
+/* Header rojizo equivalente */
+body.tema-temporada-no-activa .header {
+  background: linear-gradient(90deg, #231318, #3a1f28);
+  border-bottom: 1px solid #503040;
+}
+
+/* Panels */
+body.tema-temporada-no-activa .panel {
+  background-color: #26171c;
+  border: 1px solid #503040;
+}
+
+/* Botones navegación jornada */
+body.tema-temporada-no-activa .nav-btn {
+  background-color: #3a1f28;
+  border: 1px solid #6a3a4a;
+}
+
+body.tema-temporada-no-activa .nav-btn:hover {
+  background-color: #4a2734;
+}
+
+/* Lista partidos */
+body.tema-temporada-no-activa .partido {
+  background: radial-gradient(circle at top, #2a1a20 0, #1a0f14 55%);
+  border: 1px solid #3a1f28;
+}
+
+body.tema-temporada-no-activa .partido:nth-child(odd) {
+  background: radial-gradient(circle at top, #27171d 0, #160c11 55%);
+}
+
+/* Tabla clasificación */
+body.tema-temporada-no-activa .tabla-clasificacion thead {
+  background-color: #2b1a21;
+}
+
+body.tema-temporada-no-activa .tabla-clasificacion tbody tr:nth-child(even) {
+  background-color: #201217;
+}
+
+body.tema-temporada-no-activa .tabla-clasificacion tbody tr:hover {
+  background-color: #2a1820;
+}
+
+/* Footer */
+body.tema-temporada-no-activa .footer {
+  border-top: 1px solid #503040;
+  color: #d0b0bf;
+}

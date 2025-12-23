@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>2X FT5 League</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">2X FT5 League</h1>
+
+      <div class="header-controls">
+        <select id="temporada-select" class="temporada-select" aria-label="Selector de temporada">
+          <option value="">—</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Panel jornada -->
+    <section class="panel panel-jornada">
+      <div class="panel-header">
+        <button id="prev-jornada" class="nav-btn" type="button">◀</button>
+        <h2 id="jornada-titulo" class="panel-title">Jornada</h2>
+        <button id="next-jornada" class="nav-btn" type="button">▶</button>
+      </div>
+      <ul id="lista-partidos" class="lista-partidos">
+        <!-- Pintado dinámicamente -->
+      </ul>
+    </section>
+
+    <!-- Panel clasificación -->
+    <section class="panel panel-clasificacion">
+      <div class="panel-header">
+        <h2 class="panel-title">Clasificación</h2>
+      </div>
+      <table class="tabla-clasificacion">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jugador</th>
+            <th>PTS</th>
+            <th>FT5</th>
+            <th>Combates</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-clasificacion-body">
+          <!-- Pintado dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2X FT5 League</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
