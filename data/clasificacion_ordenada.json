@@ -6,6 +6,32 @@
   {
     "temporada": 2025,
     "posicion": 1,
+    "jugador": "Only",
+    "pj": 14,
+    "pg": 10,
+    "pp": 4,
+    "dif_p": 6,
+    "cg": 62,
+    "cp": 49,
+    "dif_c": 13,
+    "puntos": 112
+  },
+  {
+    "temporada": 2025,
+    "posicion": 2,
+    "jugador": "Sheriff",
+    "pj": 13,
+    "pg": 10,
+    "pp": 3,
+    "dif_p": 7,
+    "cg": 61,
+    "cp": 51,
+    "dif_c": 10,
+    "puntos": 111
+  },
+  {
+    "temporada": 2025,
+    "posicion": 3,
     "jugador": "Marcade",
     "pj": 14,
     "pg": 9,
@@ -15,32 +41,6 @@
     "cp": 54,
     "dif_c": 6,
     "puntos": 105
-  },
-  {
-    "temporada": 2025,
-    "posicion": 2,
-    "jugador": "Only",
-    "pj": 12,
-    "pg": 9,
-    "pp": 3,
-    "dif_p": 6,
-    "cg": 56,
-    "cp": 41,
-    "dif_c": 15,
-    "puntos": 101
-  },
-  {
-    "temporada": 2025,
-    "posicion": 3,
-    "jugador": "Sheriff",
-    "pj": 12,
-    "pg": 9,
-    "pp": 3,
-    "dif_p": 6,
-    "cg": 56,
-    "cp": 50,
-    "dif_c": 6,
-    "puntos": 101
   },
   {
     "temporada": 2025,
@@ -59,14 +59,14 @@
     "temporada": 2025,
     "posicion": 5,
     "jugador": "Kepasaco",
-    "pj": 13,
+    "pj": 14,
     "pg": 6,
-    "pp": 7,
-    "dif_p": -1,
-    "cg": 58,
-    "cp": 56,
-    "dif_c": 2,
-    "puntos": 88
+    "pp": 8,
+    "dif_p": -2,
+    "cg": 61,
+    "cp": 61,
+    "dif_c": 0,
+    "puntos": 91
   },
   {
     "temporada": 2025,
