@@ -57,8 +57,8 @@
   },
   {
     "jugador": "Kepasaco",
-    "avatar": "Kepasaco.png",
-    "fightcade_id": "Kepasaco",
+    "avatar": "kepasaco.png",
+    "fightcade_id": "kepasaco",
     "activo": true,
     "personaje1": "Mbison-start",
     "personaje1_img": "mbison-start.gif",
@@ -67,12 +67,12 @@
     "whatsapp": 456789012,
     "whatsapp_link": "https://wa.me/456789012",
     "disponibilidad": "Noches",
-    "fightcade_link": "https://www.fightcade.com/id/Kepasaco"
+    "fightcade_link": "https://www.fightcade.com/id/kepasaco"
   },
   {
     "jugador": "Only",
-    "avatar": "Only88.png",
-    "fightcade_id": "Only88",
+    "avatar": "only88.png",
+    "fightcade_id": "only88",
     "activo": true,
     "personaje1": "DeeJay-lp",
     "personaje1_img": "deejay-lp.gif",
@@ -81,7 +81,7 @@
     "whatsapp": 567890123,
     "whatsapp_link": "https://wa.me/567890123",
     "disponibilidad": "Tardes/Noches",
-    "fightcade_link": "https://www.fightcade.com/id/Only88"
+    "fightcade_link": "https://www.fightcade.com/id/only88"
   },
   {
     "jugador": "Sheriff",
@@ -99,8 +99,8 @@
   },
   {
     "jugador": "Pof",
-    "avatar": "Pof.png",
-    "fightcade_id": "Pof",
+    "avatar": "pof.png",
+    "fightcade_id": "pof",
     "activo": true,
     "personaje1": "Balrog-lk",
     "personaje1_img": "balrog-lk.gif",
@@ -109,6 +109,6 @@
     "whatsapp": 567890123,
     "whatsapp_link": "https://wa.me/567890123",
     "disponibilidad": "Mañanas entre semana",
-    "fightcade_link": "https://www.fightcade.com/id/Pof"
+    "fightcade_link": "https://www.fightcade.com/id/pof"
   }
 ]
