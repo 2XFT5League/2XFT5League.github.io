@@ -1286,3 +1286,26 @@ body.tema-temporada-no-activa .footer {
   border-top: 1px solid #503040;
   color: #d0b0bf;
 }
+/* ==========================
+   CALENDARIO PERSONAL – AJUSTE MÓVIL
+   ========================== */
+@media (max-width: 768px) {
+
+  /* Quitar asimetría de columnas */
+  .tabla-calendario .cal-col-ft5 {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  /* Centrar visualmente el bloque FT5 */
+  .cal-ft5 {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Evitar que los jugadores empujen el conjunto */
+  .cal-ft5-jugador {
+    flex: 0 0 auto;
+  }
+
+}
