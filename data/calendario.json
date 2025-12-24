@@ -671,8 +671,8 @@
     "id_partido": "2025-J14-P04-only-vs-kepasaco",
     "p1": "Only",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5100"
   }
 ]
