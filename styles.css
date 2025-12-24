@@ -1053,6 +1053,37 @@ a:active {
 @media (max-width: 600px) {
 
   /* ============================
+     CLAVE: FIJAR ANCHO DE COLUMNA JORNADA
+     ============================ */
+
+  /* Anula el min-width general de .tabla-clasificacion en móvil
+     y fuerza reparto estable de columnas */
+  .tabla-clasificacion.tabla-calendario {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+  }
+
+  /* Columna Jornada: estrecha, centrada y sin “hueco” */
+  .tabla-clasificacion.tabla-calendario th.cal-col-jornada,
+  .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
+    width: 58px !important;
+    max-width: 58px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  /* Columna FT5: ocupa el resto */
+  .tabla-clasificacion.tabla-calendario th.cal-col-ft5,
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
+    width: auto !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  /* ============================
      FT5: compactación extrema
      ============================ */
 
@@ -1070,9 +1101,12 @@ a:active {
     gap: 0 !important;
   }
 
-  /* Centro: resultado visible y compacto */
-  .tabla-clasificacion.tabla-calendario .cal-ft5-resultado {
-    min-width: 46px;
+  /* Centro: resultado visible y compacto
+     Nota: en tu HTML el centro usa .cal-ft5-res */
+  .tabla-clasificacion.tabla-calendario .cal-ft5-res {
+    min-width: 46px !important;
+    display: inline-block;
+    text-align: center;
   }
 
   /* Ajuste fino de nombres */
