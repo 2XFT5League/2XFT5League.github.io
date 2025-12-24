@@ -1287,25 +1287,27 @@ body.tema-temporada-no-activa .footer {
   color: #d0b0bf;
 }
 /* ==========================
-   CALENDARIO PERSONAL – AJUSTE MÓVIL
+   CALENDARIO PERSONAL – AJUSTE MÓVIL (OVERRIDE)
    ========================== */
 @media (max-width: 768px) {
 
-  /* Quitar asimetría de columnas */
-  .tabla-calendario .cal-col-ft5 {
-    padding-left: 6px;
-    padding-right: 6px;
+  /* Ajuste simétrico de padding en las dos columnas del calendario */
+  .tabla-clasificacion.tabla-calendario td.cal-col-jornada,
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
 
-  /* Centrar visualmente el bloque FT5 */
-  .cal-ft5 {
-    justify-content: center;
-    gap: 8px;
+  /* Centrado visual del contenido FT5 dentro de la celda */
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5 {
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
   }
 
-  /* Evitar que los jugadores empujen el conjunto */
-  .cal-ft5-jugador {
-    flex: 0 0 auto;
+  /* Evita que cada “jugador” ocupe más de lo necesario */
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5-jugador {
+    flex: 0 0 auto !important;
   }
 
 }
