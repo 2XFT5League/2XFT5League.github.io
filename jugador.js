@@ -1015,17 +1015,21 @@ function pintarCalendarioPersonal(jugadorId) {
 
       const ft5HtmlFinal = `
         <div class="cal-ft5">
-          <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-jugador">
+          <div class="cal-ft5-jugador">
             <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar">
-            <span class="cal-ft5-nombre">${p1Id}</span>
-          </a>
+            <span class="cal-ft5-nombre">
+              <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-nombre-link">${p1Id}</a>
+            </span>
+          </div>
 
           <span class="cal-ft5-res">${resultadoHtml}</span>
 
-          <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-jugador">
-            <span class="cal-ft5-nombre">${p2Id}</span>
+          <div class="cal-ft5-jugador">
+            <span class="cal-ft5-nombre">
+              <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-nombre-link">${p2Id}</a>
+            </span>
             <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar">
-          </a>
+          </div>
         </div>
       `;
 
