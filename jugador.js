@@ -39,6 +39,22 @@ function getJsonUrl(tipo) {
 }
 
 // ============================
+// REPLAYS: DESACTIVAR LINKS EN MÓVIL REAL (sin usar ancho de pantalla)
+// ============================
+
+function esMovilReal() {
+  const ua = navigator.userAgent || "";
+  const esAndroid = /Android/i.test(ua);
+  const esIOS = /iPhone|iPad|iPod/i.test(ua);
+  const esIPadOS = (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  return esAndroid || esIOS || esIPadOS;
+}
+
+function permitirLinkReplay() {
+  return !esMovilReal();
+}
+
+// ============================
 // ESTADO EN MEMORIA
 // ============================
 
@@ -355,8 +371,6 @@ function pintarTemporadaJugador(jugadorId) {
 
   const elPos = document.getElementById("jugador-posicion");
   const elPts = document.getElementById("jugador-puntos");
-  const elFt5 = document.getElementById("jugador-ft5");
-  const elComb = document.getElementById("jugador-combates");
 
   const elSin = document.getElementById("jugador-sin-clasificacion");
   const elBarras = document.getElementById("jugador-barras");
@@ -377,8 +391,6 @@ function pintarTemporadaJugador(jugadorId) {
     elPos.textContent = "-";
   }
   if (elPts) elPts.textContent = "-";
-  if (elFt5) elFt5.textContent = "-";
-  if (elComb) elComb.textContent = "-";
 
   if (elBarras) elBarras.style.display = "none";
   if (elSin) elSin.style.display = "none";
@@ -410,8 +422,6 @@ function pintarTemporadaJugador(jugadorId) {
   }
 
   if (elPts) elPts.textContent = String(pts);
-  if (elFt5) elFt5.textContent = `${pj} | ${pg}-${pp} (${formatearSigno(difP)})`;
-  if (elComb) elComb.textContent = `${cg}-${cp} (${formatearSigno(difC)})`;
 
   if (elBarras) elBarras.style.display = "";
 
@@ -609,7 +619,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
         `;
 
         s.partidos.forEach(pp => {
-          const marcadorHtml = pp.replay
+          const marcadorHtml = (pp.replay && permitirLinkReplay())
             ? `<a href="${pp.replay}" target="_blank" rel="noopener noreferrer" class="calendario-resultado-link ${pp.clase}"><strong>${pp.marcador}</strong></a>`
             : `<strong class="${pp.clase}">${pp.marcador}</strong>`;
 
@@ -964,22 +974,6 @@ function pintarCalendarioPersonal(jugadorId) {
       const p1Avatar = (typeof p1.avatar === "string" && p1.avatar.trim()) ? (normalizarRutaImg(p1.avatar) || "img/default.png") : "img/default.png";
       const p2Avatar = (typeof p2.avatar === "string" && p2.avatar.trim()) ? (normalizarRutaImg(p2.avatar) || "img/default.png") : "img/default.png";
 
-      const ft5Html = `
-        <div class="cal-ft5">
-          <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-jugador">
-            <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar">
-            <span class="cal-ft5-nombre">${p1Id}</span>
-          </a>
-
-          <span class="cal-ft5-vs">vs</span>
-
-          <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-jugador">
-            <span class="cal-ft5-nombre">${p2Id}</span>
-            <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar">
-          </a>
-        </div>
-      `;
-
       // Resultado / estado
       const jugado = esPartidoJugado(partido);
 
@@ -1012,18 +1006,33 @@ function pintarCalendarioPersonal(jugadorId) {
 
         const replayUrl = (typeof partido.replay === "string") ? partido.replay.trim() : "";
 
-        if (replayUrl) {
+        if (replayUrl && permitirLinkReplay()) {
           resultadoHtml = `<a href="${replayUrl}" target="_blank" rel="noopener noreferrer" class="${claseResultado} calendario-resultado-link">${marcadorTxt}</a>`;
         } else {
           resultadoHtml = `<span class="${claseResultado}">${marcadorTxt}</span>`;
         }
       }
 
+      const ft5HtmlFinal = `
+        <div class="cal-ft5">
+          <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-jugador">
+            <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar">
+            <span class="cal-ft5-nombre">${p1Id}</span>
+          </a>
+
+          <span class="cal-ft5-res">${resultadoHtml}</span>
+
+          <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-jugador">
+            <span class="cal-ft5-nombre">${p2Id}</span>
+            <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar">
+          </a>
+        </div>
+      `;
+
       filasHtml += `
         <tr>
           <td class="cal-col-jornada">${jornadaHtml}</td>
-          <td class="cal-col-ft5">${ft5Html}</td>
-          <td class="cal-col-resultado">${resultadoHtml}</td>
+          <td class="cal-col-ft5">${ft5HtmlFinal}</td>
         </tr>
       `;
     });
@@ -1035,14 +1044,7 @@ function pintarCalendarioPersonal(jugadorId) {
   }
 
   cont.innerHTML = `
-    <table class="tabla-clasificacion tabla-calendario">
-      <thead>
-        <tr>
-          <th class="cal-col-jornada">Jornada</th>
-          <th class="cal-col-ft5">FT5</th>
-          <th class="cal-col-resultado">Resultado</th>
-        </tr>
-      </thead>
+    <table class="tabla-clasificacion tabla-calendario tabla-calendario-sin-cabecera">
       <tbody>
         ${filasHtml}
       </tbody>

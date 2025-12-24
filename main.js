@@ -33,6 +33,22 @@ function getJsonUrl(tipo) {
 }
 
 // ============================
+// REPLAYS: DESACTIVAR LINKS EN MÓVIL REAL (sin usar ancho de pantalla)
+// ============================
+
+function esMovilReal() {
+  const ua = navigator.userAgent || "";
+  const esAndroid = /Android/i.test(ua);
+  const esIOS = /iPhone|iPad|iPod/i.test(ua);
+  const esIPadOS = (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  return esAndroid || esIOS || esIPadOS;
+}
+
+function permitirLinkReplay() {
+  return !esMovilReal();
+}
+
+// ============================
 // ESTADO EN MEMORIA
 // ============================
 
@@ -475,7 +491,7 @@ function pintarJornada() {
 
       const replayUrl = (typeof partido.replay === "string") ? partido.replay.trim() : "";
 
-      if (replayUrl !== "") {
+      if (replayUrl !== "" && permitirLinkReplay()) {
         resultadoHtml = `<a href="${replayUrl}" target="_blank" rel="noopener noreferrer">${marcadorTxt}</a>`;
       } else {
         resultadoHtml = marcadorTxt;

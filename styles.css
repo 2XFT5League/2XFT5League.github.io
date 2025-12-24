@@ -324,8 +324,7 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* FT5: cabecera centrada, datos a la izquierda */
-/* FT5 con anchura consistente y alineación perfecta (calendario personal) */
+/* FT5: cabecera centrada, datos centrados (calendario personal) */
 .tabla-clasificacion.tabla-calendario th.cal-col-ft5 {
   text-align: center;
   vertical-align: middle;
@@ -336,12 +335,12 @@ body {
   vertical-align: middle;
 }
 
-/* 3 columnas: [P1] [vs] [P2] */
+/* 3 columnas: [P1] [RESULTADO] [P2] */
 .cal-ft5 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  column-gap: 8px;
+  column-gap: 10px;
   white-space: nowrap;
   width: 100%;
 }
@@ -386,18 +385,12 @@ body {
   text-align: right;
 }
 
-.cal-ft5-vs {
-  opacity: 0.7;
-  font-size: 12px;
-}
-
-.tabla-clasificacion.tabla-calendario th.cal-col-resultado,
-.tabla-clasificacion.tabla-calendario td.cal-col-resultado {
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  padding-left: 6px;
-  padding-right: 6px;
+/* Centro: RESULTADO (con colores/link igual que ahora) */
+.cal-ft5-resultado {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
   font-variant-numeric: tabular-nums;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1068,26 +1061,18 @@ a:active {
     display: none !important;
   }
 
-  /* Eliminar espacios reales */
+  /* Ajuste de separación: mínimo pero sin pegarlo */
   .tabla-clasificacion.tabla-calendario .cal-ft5 {
-    gap: 0 !important;
+    column-gap: 6px !important;
   }
 
   .tabla-clasificacion.tabla-calendario .cal-ft5-jugador {
     gap: 0 !important;
   }
 
-  /* Sustituir "vs" por "-" sin espacios */
-  .tabla-clasificacion.tabla-calendario .cal-ft5-vs {
-    font-size: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .tabla-clasificacion.tabla-calendario .cal-ft5-vs::before {
-    content: "-" !important;
-    font-size: 13px;
-    opacity: 0.85;
+  /* Centro: resultado visible y compacto */
+  .tabla-clasificacion.tabla-calendario .cal-ft5-resultado {
+    min-width: 46px;
   }
 
   /* Ajuste fino de nombres */
@@ -1115,17 +1100,6 @@ a:active {
     letter-spacing: 0.04em;
   }
 
-  /* RESULTADO -> Res. */
-  .tabla-clasificacion.tabla-calendario th.cal-col-resultado {
-    font-size: 0;
-  }
-
-  .tabla-clasificacion.tabla-calendario th.cal-col-resultado::after {
-    content: "Res.";
-    font-size: 12px;
-    letter-spacing: 0.04em;
-  }
-
   /* ============================
      FILAS
      ============================ */
@@ -1147,7 +1121,7 @@ a:active {
     font-variant-numeric: tabular-nums;
   }
 
-  /* Pendiente -> Pte. */
+  /* Pendiente -> Pte. (calendario personal) */
   .tabla-clasificacion.tabla-calendario .resultado-pendiente {
     font-size: 0;
   }
