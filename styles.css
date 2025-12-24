@@ -311,14 +311,9 @@ body {
 /* ============================
    TABLA CALENDARIO PERSONAL
    Alineación EXACTA cabecera ↔ columna
-   + control real de anchos (layout fijo)
+   + rango de jornada más pequeño
    ============================ */
 
-.tabla-clasificacion.tabla-calendario {
-  table-layout: fixed;
-}
-
-/* Columna JORNADA */
 .tabla-clasificacion.tabla-calendario th.cal-col-jornada,
 .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
   text-align: center;
