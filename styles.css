@@ -1286,37 +1286,3 @@ body.tema-temporada-no-activa .footer {
   border-top: 1px solid #503040;
   color: #d0b0bf;
 }
-/* ==========================
-   CALENDARIO PERSONAL – MÓVIL: FIJAR ANCHO COLUMNA JORNADA
-   ========================== */
-@media (max-width: 768px) {
-
-  /* Reparto estable de columnas */
-  .tabla-clasificacion.tabla-calendario {
-    width: 100% !important;
-    table-layout: fixed !important;
-  }
-
-  /* Jornada: estrecha y centrada */
-  .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
-    width: 72px !important;
-    max-width: 72px !important;
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-  }
-
-  /* FT5: ocupa el resto */
-  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
-    width: calc(100% - 72px) !important;
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-  }
-
-  /* Que el bloque FT5 use todo el ancho disponible */
-  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5 {
-    width: 100% !important;
-  }
-}
-
