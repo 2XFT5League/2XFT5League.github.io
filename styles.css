@@ -1287,40 +1287,28 @@ body.tema-temporada-no-activa .footer {
   color: #d0b0bf;
 }
 /* ==========================
-   CALENDARIO PERSONAL – AJUSTE MÓVIL (CENTRADO REAL)
+   CALENDARIO PERSONAL: EN MÓVIL, NO USAR “TABLA RESPONSIVE” CON TD EN BLOQUE
    ========================== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-  /* Evita que el calendario herede min-width pensados para clasificación HOME */
-  .tabla-clasificacion.tabla-calendario {
-    width: 100% !important;
-    min-width: 0 !important;
-    table-layout: fixed !important;
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera,
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tbody,
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tr {
+    display: table-row-group !important;
   }
 
-  /* Columna izquierda: estrecha y estable */
-  .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
-    width: 72px !important;
-    vertical-align: middle !important;
-    padding-left: 3px !important;
-    padding-right: 3px !important;
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tr {
+    display: table-row !important;
   }
 
-  /* Columna FT5: el resto */
-  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
-    width: auto !important;
-    vertical-align: middle !important;
-    padding-left: 3px !important;
-    padding-right: 3px !important;
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera td {
+    display: table-cell !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
 
-  /* CLAVE:
-     .cal-ft5 es GRID (no flex). Para centrar visualmente, que mida lo que ocupa
-     y centramos con margin auto dentro de la celda. */
-  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5 {
-    width: fit-content !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera td::before {
+    content: none !important;
+    display: none !important;
   }
-
 }
