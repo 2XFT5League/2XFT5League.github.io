@@ -70,9 +70,10 @@ body {
 
 /* En móvil, que no “rompa” el header */
 @media (max-width: 600px) {
+  /* Mantener el header en UNA SOLA LÍNEA (logo izq, selector der) */
   .header-controls {
-    margin-top: 6px;
-    width: 100%;
+    margin-top: 0;
+    width: auto;
     justify-content: flex-end;
   }
 
@@ -930,8 +931,9 @@ a:active {
 
 /* Ajustes finos para móvil */
 @media (max-width: 600px) {
+  /* Mantener el header SIEMPRE en una sola línea */
   .header-inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .logo {
