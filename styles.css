@@ -1287,28 +1287,36 @@ body.tema-temporada-no-activa .footer {
   color: #d0b0bf;
 }
 /* ==========================
-   CALENDARIO PERSONAL: EN MÓVIL, NO USAR “TABLA RESPONSIVE” CON TD EN BLOQUE
+   CALENDARIO PERSONAL – MÓVIL: FIJAR ANCHO COLUMNA JORNADA
    ========================== */
 @media (max-width: 768px) {
 
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera,
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tbody,
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tr {
-    display: table-row-group !important;
+  /* Reparto estable de columnas */
+  .tabla-clasificacion.tabla-calendario {
+    width: 100% !important;
+    table-layout: fixed !important;
   }
 
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera tr {
-    display: table-row !important;
+  /* Jornada: estrecha y centrada */
+  .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
+    width: 72px !important;
+    max-width: 72px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
 
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera td {
-    display: table-cell !important;
+  /* FT5: ocupa el resto */
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
+    width: calc(100% - 72px) !important;
     padding-left: 6px !important;
     padding-right: 6px !important;
   }
 
-  .tabla-clasificacion.tabla-calendario.tabla-calendario-sin-cabecera td::before {
-    content: none !important;
-    display: none !important;
+  /* Que el bloque FT5 use todo el ancho disponible */
+  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5 {
+    width: 100% !important;
   }
 }
+
