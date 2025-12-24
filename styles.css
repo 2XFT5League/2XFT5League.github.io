@@ -1287,41 +1287,40 @@ body.tema-temporada-no-activa .footer {
   color: #d0b0bf;
 }
 /* ==========================
-   CALENDARIO PERSONAL – AJUSTE MÓVIL (OVERRIDE FINAL)
+   CALENDARIO PERSONAL – AJUSTE MÓVIL (CENTRADO REAL)
    ========================== */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  /* Asegura reparto estable de ancho entre columnas */
+  /* Evita que el calendario herede min-width pensados para clasificación HOME */
   .tabla-clasificacion.tabla-calendario {
     width: 100% !important;
+    min-width: 0 !important;
     table-layout: fixed !important;
   }
 
-  /* Columna izquierda (Jornada) mucho más estrecha en móvil */
+  /* Columna izquierda: estrecha y estable */
   .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
-    width: 92px !important;
-    padding-left: 6px !important;
-    padding-right: 6px !important;
+    width: 72px !important;
     vertical-align: middle !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
   }
 
-  /* Columna derecha (FT5) ocupa el resto */
+  /* Columna FT5: el resto */
   .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
     width: auto !important;
-    padding-left: 6px !important;
-    padding-right: 6px !important;
     vertical-align: middle !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
   }
 
-  /* El contenido FT5 centrado dentro de su celda */
+  /* CLAVE:
+     .cal-ft5 es GRID (no flex). Para centrar visualmente, que mida lo que ocupa
+     y centramos con margin auto dentro de la celda. */
   .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5 {
-    justify-content: center !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-
-  .tabla-clasificacion.tabla-calendario td.cal-col-ft5 .cal-ft5-jugador {
-    flex: 0 0 auto !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
 }
