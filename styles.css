@@ -1067,8 +1067,8 @@ a:active {
   /* Columna Jornada: estrecha, centrada y sin “hueco” */
   .tabla-clasificacion.tabla-calendario th.cal-col-jornada,
   .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
-    width: 58px !important;
-    max-width: 58px !important;
+    width: 48px !important;
+    max-width: 48px !important;
     padding-left: 4px !important;
     padding-right: 4px !important;
     text-align: center !important;
