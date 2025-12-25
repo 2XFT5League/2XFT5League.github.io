@@ -85,26 +85,26 @@
     "temporada": 2025,
     "posicion": 7,
     "jugador": "Sepia",
-    "pj": 13,
+    "pj": 14,
     "pg": 3,
-    "pp": 10,
-    "dif_p": -7,
-    "cg": 49,
-    "cp": 62,
-    "dif_c": -13,
-    "puntos": 64
+    "pp": 11,
+    "dif_p": -8,
+    "cg": 53,
+    "cp": 67,
+    "dif_c": -14,
+    "puntos": 68
   },
   {
     "temporada": 2025,
     "posicion": 8,
     "jugador": "Pof",
-    "pj": 13,
-    "pg": 2,
+    "pj": 14,
+    "pg": 3,
     "pp": 11,
-    "dif_p": -9,
-    "cg": 46,
-    "cp": 63,
-    "dif_c": -17,
-    "puntos": 56
+    "dif_p": -8,
+    "cg": 51,
+    "cp": 67,
+    "dif_c": -16,
+    "puntos": 66
   }
 ]
