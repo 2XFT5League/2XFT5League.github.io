@@ -647,8 +647,8 @@
     "id_partido": "2025-J14-P02-pof-vs-sepia",
     "p1": "Pof",
     "p2": "Sepia",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5098"
   },
   {
