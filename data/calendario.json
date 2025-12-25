@@ -647,8 +647,8 @@
     "id_partido": "2025-J14-P02-pof-vs-sepia",
     "p1": "Pof",
     "p2": "Sepia",
-    "marcadorp1": 5,
-    "marcadorp2": 4,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5098"
   },
   {
@@ -659,8 +659,8 @@
     "id_partido": "2025-J14-P03-ricky-vs-sheriff",
     "p1": "Ricky",
     "p2": "Sheriff",
-    "marcadorp1": 5,
-    "marcadorp2": 2,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5099"
   },
   {
@@ -671,8 +671,8 @@
     "id_partido": "2025-J14-P04-only-vs-kepasaco",
     "p1": "Only",
     "p2": "Kepasaco",
-    "marcadorp1": 5,
-    "marcadorp2": 3,
+    "marcadorp1": "",
+    "marcadorp2": "",
     "replay": "https://replay.fightcade.com/fbneo/ssf2xjr1/1764527054613-5100"
   }
 ]
