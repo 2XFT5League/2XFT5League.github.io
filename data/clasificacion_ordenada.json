@@ -6,19 +6,6 @@
   {
     "temporada": 2025,
     "posicion": 1,
-    "jugador": "Sheriff",
-    "pj": 14,
-    "pg": 10,
-    "pp": 4,
-    "dif_p": 6,
-    "cg": 63,
-    "cp": 56,
-    "dif_c": 7,
-    "puntos": 113
-  },
-  {
-    "temporada": 2025,
-    "posicion": 2,
     "jugador": "Only",
     "pj": 14,
     "pg": 10,
@@ -31,20 +18,20 @@
   },
   {
     "temporada": 2025,
-    "posicion": 3,
-    "jugador": "Ricky",
-    "pj": 14,
-    "pg": 9,
-    "pp": 5,
-    "dif_p": 4,
-    "cg": 64,
-    "cp": 57,
-    "dif_c": 7,
-    "puntos": 109
+    "posicion": 2,
+    "jugador": "Sheriff",
+    "pj": 13,
+    "pg": 10,
+    "pp": 3,
+    "dif_p": 7,
+    "cg": 61,
+    "cp": 51,
+    "dif_c": 10,
+    "puntos": 111
   },
   {
     "temporada": 2025,
-    "posicion": 4,
+    "posicion": 3,
     "jugador": "Marcade",
     "pj": 14,
     "pg": 9,
@@ -54,6 +41,19 @@
     "cp": 54,
     "dif_c": 6,
     "puntos": 105
+  },
+  {
+    "temporada": 2025,
+    "posicion": 4,
+    "jugador": "Ricky",
+    "pj": 13,
+    "pg": 8,
+    "pp": 5,
+    "dif_p": 3,
+    "cg": 59,
+    "cp": 55,
+    "dif_c": 4,
+    "puntos": 99
   },
   {
     "temporada": 2025,
@@ -85,26 +85,26 @@
     "temporada": 2025,
     "posicion": 7,
     "jugador": "Sepia",
-    "pj": 14,
+    "pj": 13,
     "pg": 3,
-    "pp": 11,
-    "dif_p": -8,
-    "cg": 53,
-    "cp": 67,
-    "dif_c": -14,
-    "puntos": 68
+    "pp": 10,
+    "dif_p": -7,
+    "cg": 49,
+    "cp": 62,
+    "dif_c": -13,
+    "puntos": 64
   },
   {
     "temporada": 2025,
     "posicion": 8,
     "jugador": "Pof",
-    "pj": 14,
-    "pg": 3,
+    "pj": 13,
+    "pg": 2,
     "pp": 11,
-    "dif_p": -8,
-    "cg": 51,
-    "cp": 67,
-    "dif_c": -16,
-    "puntos": 66
+    "dif_p": -9,
+    "cg": 46,
+    "cp": 63,
+    "dif_c": -17,
+    "puntos": 56
   }
 ]
