@@ -1193,9 +1193,9 @@ a.calendario-resultado-link:active {
 .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1) {
   background: linear-gradient(
     90deg,
-    #201c14 0%,
-    #3b3120 50%,
-    #201c14 100%
+    #2a2412 0%,
+    #7a6724 50%,
+    #2a2412 100%
   ) !important;
 }
 
@@ -1204,7 +1204,7 @@ a.calendario-resultado-link:active {
 }
 
 .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1) td:first-child {
-  border-left: 3px solid #bfa64a !important; /* dorado apagado */
+  border-left: 3px solid #e6c85c !important; /* dorado más vivo */
 }
 
 /* ===== TOP 8 (2–8) – glow continuo por FILA (no por celda) ===== */
@@ -1245,9 +1245,9 @@ a.calendario-resultado-link:active {
 .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(1):hover {
   background: linear-gradient(
     90deg,
-    #201c14 0%,
-    #4a3c25 50%,
-    #201c14 100%
+    #2a2412 0%,
+    #7a6624 50%,
+    #2a2412 100%
   ) !important;
 }
 
