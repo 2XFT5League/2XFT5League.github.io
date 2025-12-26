@@ -313,7 +313,14 @@ function pintarPerfilJugador(jugadorId) {
     }
   }
 
-  if (elAvatar) elAvatar.src = (normalizarRutaImg(jugador.avatar) || "img/default.png");
+  if (elAvatar) {
+    elAvatar.onerror = null;
+    elAvatar.onerror = function () {
+      this.onerror = null;
+      this.src = "img/default.png";
+    };
+    elAvatar.src = (normalizarRutaImg(jugador.avatar) || "img/default.png");
+  }
 
   // Personajes
   const p1img = (typeof jugador.personaje1_img === "string") ? jugador.personaje1_img.trim() : "";
@@ -654,7 +661,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
 
     <div class="partido">
       <div class="jugador jugador-izq">
-        <img src="${p1Avatar}" alt="${p1Id}" class="avatar">
+        <img src="${p1Avatar}" alt="${p1Id}" class="avatar" onerror="this.onerror=null; this.src='img/default.png';">
         ${enlaceP1}
       </div>
 
@@ -662,7 +669,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
 
       <div class="jugador jugador-der">
         ${enlaceP2}
-        <img src="${p2Avatar}" alt="${p2Id}" class="avatar">
+        <img src="${p2Avatar}" alt="${p2Id}" class="avatar" onerror="this.onerror=null; this.src='img/default.png';">
       </div>
     </div>
 
@@ -1016,7 +1023,7 @@ function pintarCalendarioPersonal(jugadorId) {
       const ft5HtmlFinal = `
         <div class="cal-ft5">
           <div class="cal-ft5-jugador">
-            <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar">
+            <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar" onerror="this.onerror=null; this.src='img/default.png';">
             <span class="cal-ft5-nombre">
               <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-nombre-link">${p1Id}</a>
             </span>
@@ -1028,7 +1035,7 @@ function pintarCalendarioPersonal(jugadorId) {
             <span class="cal-ft5-nombre">
               <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-nombre-link">${p2Id}</a>
             </span>
-            <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar">
+            <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar" onerror="this.onerror=null; this.src='img/default.png';">
           </div>
         </div>
       `;
