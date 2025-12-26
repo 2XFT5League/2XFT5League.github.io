@@ -880,27 +880,30 @@ a.resultado-perdido {
 }
 
 /* ============================
-   LINKS (sin azul/violeta)
+   LINKS (SIN SUBRAYADO NI CAMBIO DE COLOR NUNCA)
    Nota: EXCLUIMOS el link del marcador del calendario para permitir colores win/lose
    ============================ */
+
+/* Todos los links normales: mismo color que el texto y sin subrayado en cualquier estado */
 a:not(.calendario-resultado-link),
 a:not(.calendario-resultado-link):link,
-a:not(.calendario-resultado-link):visited {
+a:not(.calendario-resultado-link):visited,
+a:not(.calendario-resultado-link):hover,
+a:not(.calendario-resultado-link):focus,
+a:not(.calendario-resultado-link):active {
   color: inherit;
   text-decoration: none;
 }
 
-/* Hover normal en links, EXCEPTO marcador del calendario */
-a:hover {
-  text-decoration: underline;
-}
-
-a.calendario-resultado-link:hover {
+/* Blindaje del link del marcador del calendario: sin subrayado en cualquier estado.
+   El color lo determinan tus clases .resultado-win/.resultado-lose/.resultado-pendiente/.resultado-futuro */
+a.calendario-resultado-link,
+a.calendario-resultado-link:link,
+a.calendario-resultado-link:visited,
+a.calendario-resultado-link:hover,
+a.calendario-resultado-link:focus,
+a.calendario-resultado-link:active {
   text-decoration: none;
-}
-
-a:active {
-  color: inherit;
 }
 
 /* ============================
