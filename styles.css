@@ -488,31 +488,6 @@ body {
   color: #b0b0d0;
 }
 
-/* Footer dentro de un panel (mismo look que el resto, pero compacto) */
-.footer .panel {
-  max-width: 1200px;
-  margin: 8px auto 0;
-  padding: 10px 12px 12px;
-}
-
-.footer .panel-header {
-  margin-bottom: 6px;
-}
-
-.footer .panel-title {
-  font-size: 13px;
-  letter-spacing: 0.10em;
-}
-
-.footer .panel-content {
-  font-size: 13px;
-  color: #f5f5f5;
-}
-
-.footer .panel-content p {
-  margin: 0;
-}
-
 /* ===== Página de jugador ===== */
 
 .main-jugador {
