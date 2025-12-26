@@ -579,7 +579,8 @@ function pintarClasificacion() {
     const cp = safeNum(fila.cp);
     const difC = safeNum(fila.dif_c);
 
-    const ft5Html = `<span class="stats stats-ft5"><span class="stats-pj">${pj}</span> | <span class="stats-rest">${pg}-${pp} (${formatearSigno(difP)})</span></span>`;
+    // FT5 compacto: SIN espacios alrededor del separador para que no “ensanche” en móvil
+    const ft5Html = `<span class="stats stats-ft5"><span class="stats-pj">${pj}</span>|<span class="stats-rest">${pg}-${pp} (${formatearSigno(difP)})</span></span>`;
     const combHtml = `<span class="stats stats-comb"><span class="stats-rest">${cg}-${cp} (${formatearSigno(difC)})</span></span>`;
 
     tr.innerHTML = `
