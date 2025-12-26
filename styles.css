@@ -1337,3 +1337,16 @@ body.tema-temporada-no-activa .footer {
   border-top: 1px solid #503040;
   color: #d0b0bf;
 }
+/* ==========================
+   NORMAS – LAYOUT ESCRITORIO
+   ========================== */
+
+.main-normas {
+  display: flex;
+  justify-content: center;
+}
+
+.main-normas .panel-normas {
+  width: 100%;
+  max-width: 640px;
+}
