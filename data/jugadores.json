@@ -113,8 +113,8 @@
   },
   {
     "jugador": "AL",
-    "avatar": "AL.png",
-    "fightcade_id": "AL",
+    "avatar": "_AL_.png",
+    "fightcade_id": "_AL_",
     "activo": true,
     "personaje1": "Vega-lp",
     "personaje1_img": "vega-lp.gif",
@@ -123,7 +123,7 @@
     "whatsapp": "",
     "whatsapp_link": "",
     "disponibilidad": "",
-    "fightcade_link": "https://www.fightcade.com/id/AL"
+    "fightcade_link": "https://www.fightcade.com/id/_AL_"
   },
   {
     "jugador": "Abel",
