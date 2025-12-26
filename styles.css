@@ -453,12 +453,20 @@ body {
 }
 
 /* Alineado vertical: números en columnas con ancho visual consistente */
-.td-puntos,
 .td-stats {
   text-align: center;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* PTS: datos alineados a la derecha para evitar invasión visual hacia FT5 */
+.td-puntos {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  min-width: 3ch; /* suficiente para 0–999 sin saltos */
 }
 
 /* Estructura interna FT5 / Combates */
