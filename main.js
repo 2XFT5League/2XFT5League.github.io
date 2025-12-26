@@ -512,7 +512,7 @@ function pintarJornada() {
 
     li.innerHTML = `
       <div class="jugador jugador-izq">
-        <img src="${avatarP1}" alt="${nombreP1}" class="avatar">
+        <img src="${avatarP1}" alt="${nombreP1}" class="avatar" onerror="this.onerror=null; this.src='img/default.png';">
         <a href="jugador.html?id=${encodeURIComponent(idParamP1)}" class="nombre">
           ${nombreP1}
         </a>
@@ -522,7 +522,7 @@ function pintarJornada() {
         <a href="jugador.html?id=${encodeURIComponent(idParamP2)}" class="nombre">
           ${nombreP2}
         </a>
-        <img src="${avatarP2}" alt="${nombreP2}" class="avatar">
+        <img src="${avatarP2}" alt="${nombreP2}" class="avatar" onerror="this.onerror=null; this.src='img/default.png';">
       </div>
     `;
 
@@ -588,7 +588,7 @@ function pintarClasificacion() {
     tr.innerHTML = `
       <td class="posicion">${safeNum(fila.posicion)}</td>
       <td class="jugador-cell">
-        <img src="${avatar}" alt="${nombre}" class="avatar">
+        <img src="${avatar}" alt="${nombre}" class="avatar" onerror="this.onerror=null; this.src='img/default.png';">
         <a href="jugador.html?id=${encodeURIComponent(idParam)}" class="nombre">
           ${nombre}
         </a>
