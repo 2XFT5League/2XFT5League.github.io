@@ -69,7 +69,7 @@ body {
 }
 
 /* En móvil, que no “rompa” el header */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   /* Mantener el header en UNA SOLA LÍNEA (logo izq, selector der) */
   .header-controls {
     margin-top: 0;
@@ -969,7 +969,7 @@ a.calendario-resultado-link:active {
 }
 
 /* Ajustes finos para móvil */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   /* Mantener el header SIEMPRE en una sola línea */
   .header-inner {
     flex-wrap: nowrap;
@@ -1091,7 +1091,7 @@ a.calendario-resultado-link:active {
    (sin avatares, cabeceras compactas, máximo aprovechamiento de ancho)
    ============================ */
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
   /* ============================
      CLAVE: FIJAR ANCHO DE COLUMNA JORNADA
@@ -1435,15 +1435,17 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
   width: 100%;
   max-width: 640px;
 }
-/* HOME – JORNADA (móvil): el centro no debe reservar ancho fijo */
-.panel-jornada .resultado {
-  min-width: 0 !important;   /* CLAVE */
-  padding: 0 4px;
-  white-space: nowrap;
-}
+@media (max-width: 500px) {
+  /* HOME – JORNADA (móvil): el centro no debe reservar ancho fijo */
+  .panel-jornada .resultado {
+    min-width: 0 !important;   /* CLAVE */
+    padding: 0 4px;
+    white-space: nowrap;
+  }
 
-/* “Pte.” aún más compacto */
-.panel-jornada .resultado-pendiente::after {
-  font-size: 12px;
-  letter-spacing: 0;
+  /* “Pte.” aún más compacto */
+  .panel-jornada .resultado-pendiente::after {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
 }
