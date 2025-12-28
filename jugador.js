@@ -1020,11 +1020,17 @@ function pintarCalendarioPersonal(jugadorId) {
         }
       }
 
+      const p1EsPropio = (p1Id === jugadorId);
+      const p2EsPropio = (p2Id === jugadorId);
+
+      const p1ClaseNombre = p1EsPropio ? "cal-propio" : "cal-rival";
+      const p2ClaseNombre = p2EsPropio ? "cal-propio" : "cal-rival";
+
       const ft5HtmlFinal = `
         <div class="cal-ft5">
           <div class="cal-ft5-jugador">
             <img src="${p1Avatar}" alt="${p1Id}" class="cal-ft5-avatar" onerror="this.onerror=null; this.src='img/default.png';">
-            <span class="cal-ft5-nombre">
+            <span class="cal-ft5-nombre ${p1ClaseNombre}" data-propio="${p1EsPropio ? "1" : "0"}" data-rival="${p1EsPropio ? "0" : "1"}">
               <a href="jugador.html?id=${encodeURIComponent(p1Id)}" class="cal-ft5-nombre-link">${p1Id}</a>
             </span>
           </div>
@@ -1032,7 +1038,7 @@ function pintarCalendarioPersonal(jugadorId) {
           <span class="cal-ft5-res">${resultadoHtml}</span>
 
           <div class="cal-ft5-jugador">
-            <span class="cal-ft5-nombre">
+            <span class="cal-ft5-nombre ${p2ClaseNombre}" data-propio="${p2EsPropio ? "1" : "0"}" data-rival="${p2EsPropio ? "0" : "1"}">
               <a href="jugador.html?id=${encodeURIComponent(p2Id)}" class="cal-ft5-nombre-link">${p2Id}</a>
             </span>
             <img src="${p2Avatar}" alt="${p2Id}" class="cal-ft5-avatar" onerror="this.onerror=null; this.src='img/default.png';">
