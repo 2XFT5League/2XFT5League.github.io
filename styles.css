@@ -910,11 +910,11 @@ a.resultado-perdido {
 
 /* Preferencia de ancho: 1.15 / 0.85 */
 .proximo-rival-col:first-child {
-  flex: 1.17 1 0;
+  flex: 1.16 1 0;
 }
 
 .proximo-rival-col:last-child {
-  flex: 0.83 1 0;
+  flex: 0.84 1 0;
 }
 
 /* SOLO como red de seguridad extrema */
