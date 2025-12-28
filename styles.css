@@ -1109,7 +1109,7 @@ a.calendario-resultado-link:active {
     width: 58px !important;
     max-width: 58px !important;
     padding-left: 6px !important;
-    padding-right: 4px !important;
+    padding-right: 6px !important;
     text-align: left !important;
     white-space: nowrap !important;
   }
@@ -1473,6 +1473,11 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
     min-width: 0 !important;   /* CLAVE */
     padding: 0 4px;
     white-space: nowrap;
+  }
+
+  /* HOME – JORNADA (móvil): aire al borde derecho para P2 */
+  .jugador-der {
+    padding-right: 6px;
   }
 
   /* “Pte.” aún más compacto */
