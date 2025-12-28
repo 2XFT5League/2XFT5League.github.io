@@ -386,6 +386,30 @@ body {
   text-align: right;
 }
 
+/* ============================
+   CALENDARIO PERSONAL – COLOR RIVALES
+   (sin rojo/verde; jugador actual siempre blanco)
+   Nota: esto actúa SOLO si tu HTML/JS marca clases/atributos:
+   - rival:   .cal-rival  o  [data-rival="1"]
+   - propio:  .cal-propio o  [data-propio="1"]
+   ============================ */
+
+/* Rivales (destacado azul/cian Fightcade-like) */
+.panel-jugador-calendario .cal-rival .cal-ft5-nombre,
+.panel-jugador-calendario .cal-ft5-nombre.cal-rival,
+.panel-jugador-calendario .cal-ft5-nombre[data-rival="1"] {
+  color: #57c7ff;
+  font-weight: 700;
+}
+
+/* Jugador de la página (blindaje a blanco) */
+.panel-jugador-calendario .cal-propio .cal-ft5-nombre,
+.panel-jugador-calendario .cal-ft5-nombre.cal-propio,
+.panel-jugador-calendario .cal-ft5-nombre[data-propio="1"] {
+  color: #ffffff;
+  font-weight: 700;
+}
+
 /* Centro: RESULTADO (con colores/link igual que ahora) */
 .cal-ft5-resultado {
   display: inline-flex;
