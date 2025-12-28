@@ -1337,6 +1337,67 @@ body.tema-temporada-no-activa .footer {
   border-top: 1px solid #503040;
   color: #d0b0bf;
 }
+
+/* ============================
+   HOME – CLASIFICACIÓN: Top 8 (2–8) en tema rojizo cuando la temporada NO es activa
+   (equivalente visual al resaltado azul respecto a su fondo)
+   ============================ */
+
+/* Impar */
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(odd) {
+  background: linear-gradient(
+    90deg,
+    #251319 0%,
+    #4e1f2f 50%,
+    #251319 100%
+  ) !important;
+}
+
+/* Par */
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(even) {
+  background: linear-gradient(
+    90deg,
+    #231017 0%,
+    #461b2a 50%,
+    #231017 100%
+  ) !important;
+}
+
+/* CLAVE: td transparentes para que se vea el fondo del tr (banda continua) */
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8) td {
+  background: transparent !important;
+}
+
+/* Barra izquierda Top 8 (equivalente rojizo del azul apagado) */
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8) td:first-child {
+  border-left: 3px solid #993f5d !important;
+}
+
+/* ===== Hover: realce sin “romper” el gradiente ===== */
+
+/* TOP 8 hover (más brillo, sigue siendo banda continua) */
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(odd):hover {
+  background: linear-gradient(
+    90deg,
+    #251319 0%,
+    #5f2639 50%,
+    #251319 100%
+  ) !important;
+}
+
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):nth-child(even):hover {
+  background: linear-gradient(
+    90deg,
+    #231017 0%,
+    #592034 50%,
+    #231017 100%
+  ) !important;
+}
+
+body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr:nth-child(n+2):nth-child(-n+8):hover td {
+  background: transparent !important;
+}
+
 /* ==========================
    NORMAS – LAYOUT ESCRITORIO
    ========================== */
