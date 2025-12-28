@@ -1108,9 +1108,9 @@ a.calendario-resultado-link:active {
   .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
     width: 58px !important;
     max-width: 58px !important;
-    padding-left: 4px !important;
+    padding-left: 6px !important;
     padding-right: 4px !important;
-    text-align: center !important;
+    text-align: left !important;
     white-space: nowrap !important;
   }
 
