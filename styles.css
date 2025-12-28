@@ -918,7 +918,7 @@ a.resultado-perdido {
 }
 
 /* SOLO como red de seguridad extrema */
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .proximo-rival-dos-columnas {
     flex-direction: column;
     gap: 10px;
