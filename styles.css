@@ -1028,31 +1028,7 @@ a.calendario-resultado-link:active {
     min-width: 8ch; /* baja a 9ch si quieres aún más */
   }
 
-  .main-jugador {
-    grid-template-columns: 1fr;
-  }
-
-  .panel-jugador-info {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .panel-jugador-clasificacion {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-
-  .panel-jugador-proximo {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  .panel-jugador-calendario {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-
-  .jugador-perfil {
+    .jugador-perfil {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -1435,6 +1411,33 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
   width: 100%;
   max-width: 640px;
 }
+@media (max-width: 600px) {
+  /* ===== Página de jugador: salto a 1 columna (ANTES de la micro-compactación) ===== */
+  .main-jugador {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-jugador-info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .panel-jugador-clasificacion {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .panel-jugador-proximo {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .panel-jugador-calendario {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+}
+
 @media (max-width: 500px) {
   /* HOME – JORNADA (móvil): el centro no debe reservar ancho fijo */
   .panel-jornada .resultado {
