@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const n = Number(selTemp.value);
       if (!Number.isFinite(n)) return;
       aplicarTemporada(n, true);
-      try { localStorage.setItem(STORAGE_KEY_TEMPORADA_HOME, String(n)); } catch (e) {}
     });
   }
 
@@ -140,14 +139,8 @@ async function cargarDatos() {
     temporadasDisponibles = obtenerTemporadasDisponibles(calendarioRaw, clasificacionRaw);
     configurarSelectorTemporada(temporadasDisponibles);
 
-    // Temporada vista inicial: preferimos selección guardada si es válida
-    let temporadaInicial = Number(temporadaMeta);
-    try {
-      const guardada = Number(localStorage.getItem(STORAGE_KEY_TEMPORADA_HOME));
-      if (Number.isFinite(guardada) && temporadasDisponibles.includes(guardada)) {
-        temporadaInicial = guardada;
-      }
-    } catch (e) {}
+    // Temporada vista inicial: SIEMPRE la temporada activa real
+    const temporadaInicial = Number(temporadaMeta);
 
     aplicarTemporada(temporadaInicial, true);
 
