@@ -1435,3 +1435,15 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
   width: 100%;
   max-width: 640px;
 }
+/* HOME – JORNADA (móvil): el centro no debe reservar ancho fijo */
+.panel-jornada .resultado {
+  min-width: 0 !important;   /* CLAVE */
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+/* “Pte.” aún más compacto */
+.panel-jornada .resultado-pendiente::after {
+  font-size: 12px;
+  letter-spacing: 0;
+}
