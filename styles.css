@@ -1108,7 +1108,7 @@ a.calendario-resultado-link:active {
   .tabla-clasificacion.tabla-calendario td.cal-col-jornada {
     width: 58px !important;
     max-width: 58px !important;
-    padding-left: 6px !important;
+    padding-left: 8px !important;
     padding-right: 6px !important;
     text-align: left !important;
     white-space: nowrap !important;
@@ -1119,7 +1119,7 @@ a.calendario-resultado-link:active {
   .tabla-clasificacion.tabla-calendario td.cal-col-ft5 {
     width: auto !important;
     padding-left: 4px !important;
-    padding-right: 4px !important;
+    padding-right: 8px !important;
   }
 
   /* ============================
@@ -1473,11 +1473,6 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
     min-width: 0 !important;   /* CLAVE */
     padding: 0 4px;
     white-space: nowrap;
-  }
-
-  /* HOME – JORNADA (móvil): aire al borde derecho para P2 */
-  .jugador-der {
-    padding-right: 6px;
   }
 
   /* “Pte.” aún más compacto */
