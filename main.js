@@ -498,7 +498,7 @@ function pintarJornada() {
         resultadoHtml = "-";
         li.classList.add("partido-no-jugable");
       } else {
-        resultadoHtml = "Pendiente";
+        resultadoHtml = `<span class="resultado-pendiente"><span class="resultado-txt">Pendiente</span></span>`;
         li.classList.add("partido-pendiente");
       }
     }
