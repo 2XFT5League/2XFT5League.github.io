@@ -1179,6 +1179,9 @@ a.calendario-resultado-link:active {
 
   /* Jornada: por defecto se muestra NORMAL ("Jornada 1") */
   .tabla-clasificacion.tabla-calendario .cal-jornada-num {
+    display: block;
+    width: 100%;
+    text-align: left !important;
     font-size: 13px;
     font-variant-numeric: tabular-nums;
   }
@@ -1186,10 +1189,14 @@ a.calendario-resultado-link:active {
   /* SOLO si existe data-jornada se sustituye por versión compacta */
   .tabla-clasificacion.tabla-calendario .cal-jornada-num[data-jornada] {
     font-size: 0;
+    text-align: left !important;
   }
 
   .tabla-clasificacion.tabla-calendario .cal-jornada-num[data-jornada]::after {
     content: "J." attr(data-jornada);
+    display: block;
+    width: 100%;
+    text-align: left !important;
     font-size: 13px;
     font-variant-numeric: tabular-nums;
   }
