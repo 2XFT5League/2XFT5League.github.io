@@ -115,7 +115,7 @@
     "jugador": "AL",
     "avatar": "_AL_.png",
     "fightcade_id": "_AL_",
-    "activo": true,
+    "activo": false,
     "personaje1": "Vega-lp",
     "personaje1_img": "vega-lp.gif",
     "personaje2": "",
