@@ -908,13 +908,13 @@ a.resultado-perdido {
   min-width: 0; /* CLAVE: permite ellipsis y evita empujes */
 }
 
-/* Preferencia de ancho: 1.15 / 0.85 */
+/* Preferencia de ancho: 1.30 / 0.70 */
 .proximo-rival-col:first-child {
-  flex: 1.30 1 0;
+  flex: 1.40 1 0;
 }
 
 .proximo-rival-col:last-child {
-  flex: 0.70 1 0;
+  flex: 0.60 1 0;
 }
 
 /* SOLO como red de seguridad extrema */
