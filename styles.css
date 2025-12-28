@@ -895,8 +895,30 @@ a.resultado-perdido {
   white-space: nowrap;
 }
 
-/* Responsive del bloque rival en móvil: apilar columnas */
-@media (max-width: 600px) {
+/* Próximo enfrentamiento: 2 columnas por defecto con reparto estable */
+.proximo-rival-dos-columnas {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.proximo-rival-col {
+  flex: 1 1 0;
+  min-width: 0; /* CLAVE: permite ellipsis y evita empujes */
+}
+
+/* Ligera preferencia de ancho a la izquierda (muy sutil) */
+.proximo-rival-col:first-child {
+  flex: 1.08 1 0;
+}
+
+.proximo-rival-col:last-child {
+  flex: 0.92 1 0;
+}
+
+/* SOLO como red de seguridad extrema */
+@media (max-width: 320px) {
   .proximo-rival-dos-columnas {
     flex-direction: column;
     gap: 10px;
