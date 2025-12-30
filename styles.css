@@ -839,10 +839,12 @@ a.resultado-perdido {
 }
 
 /* ============================
-   HISTORIAL DIRECTO (multi-temporada) – Próximo rival
+   HISTORIAL DIRECTO (multi-temporada) – Próximo rival (COMPACTO)
    Formato:
-   2025: W-L / (CG-CP)
-         J7. 2-5
+   2025
+   8-0 / (40-32)
+   J82. 5-4
+   ...
    Temporada activa en rojo
    ============================ */
 
@@ -850,40 +852,45 @@ a.resultado-perdido {
   margin-top: 6px;
 }
 
-.hist-bloque-temporada {
-  margin-top: 8px;
+.hist-temporada-bloque {
+  margin-top: 10px;
 }
 
-.hist-linea-resumen {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  line-height: 1.2;
+.hist-temporada-anio {
+  line-height: 1.15;
+}
+
+.hist-temporada-label {
+  opacity: 0.95;
 }
 
 .hist-temporada-activa {
   color: #FF6B6B; /* temporada activa en rojo */
 }
 
-.hist-resumen {
-  opacity: 0.95;
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.hist-temporada-resumen {
+  margin-top: 2px;
+  line-height: 1.15;
 }
 
-.hist-lista-partidos {
-  margin-top: 2px;
-  margin-left: 22px; /* sangría como tu ejemplo */
+.hist-temporada-resumen-text {
+  opacity: 0.95;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: normal; /* CLAVE: permite compactar sin forzar ancho */
+}
+
+.hist-temporada-partidos {
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.hist-linea-partido {
+.hist-temporada-partido {
   display: flex;
   gap: 6px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .hist-jornada {
@@ -908,7 +915,7 @@ a.resultado-perdido {
   min-width: 0; /* CLAVE: permite ellipsis y evita empujes */
 }
 
-/* Preferencia de ancho: 1.30 / 0.70 */
+/* Preferencia de ancho: 1.25 / 0.75 */
 .proximo-rival-col:first-child {
   flex: 1.25 1 0;
 }

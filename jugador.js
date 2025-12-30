@@ -520,9 +520,11 @@ function pintarProximoEnfrentamiento(jugadorId) {
   const rivalP1Img = (rival && typeof rival.personaje1_img === "string") ? normalizarRutaImg(rival.personaje1_img.trim()) : "";
   const rivalP2Img = (rival && typeof rival.personaje2_img === "string") ? normalizarRutaImg(rival.personaje2_img.trim()) : "";
 
-  // Historial directo (multi-temporada, formato claro tipo:
-  // 2025: W-L / (CG-CP)
-  //       J7. 2-5
+  // Historial directo (multi-temporada, compacto):
+  // 2025
+  // 8-0 / (40-32)
+  // J82. 5-4
+  // ...
   // Temporada activa en rojo. Resultados en verde/rojo como siempre y link a replay si existe.
   let historialHtml = `
     <p><span class="jugador-perfil-etiqueta">Historial directo:</span></p>
@@ -617,8 +619,11 @@ function pintarProximoEnfrentamiento(jugadorId) {
 
         html += `
           <div class="hist-temporada-bloque">
+            <div class="hist-temporada-anio">
+              <span class="${claseTemp}"><strong>${s.temporada}</strong></span>
+            </div>
+
             <div class="hist-temporada-resumen">
-              <span class="${claseTemp}"><strong>${s.temporada}:</strong></span>
               <span class="hist-temporada-resumen-text"><strong>${s.ft5G}-${s.ft5P}</strong> / (${s.combG}-${s.combP})</span>
             </div>
 
