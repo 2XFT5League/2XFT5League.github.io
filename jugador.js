@@ -652,7 +652,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
       html += `</div>`;
 
       historialHtml = `
-        <p><span class="jugador-perfil-etiqueta">Historial directo:</span></p>
+        <p><span class="jugador-perfil-etiqueta">Historial:</span></p>
         ${html}
       `;
     }
