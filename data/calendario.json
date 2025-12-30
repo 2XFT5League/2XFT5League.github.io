@@ -10343,8 +10343,8 @@
     "id_partido": "2025-J01-P01-vins-vs-redspecial",
     "p1": "Vins",
     "p2": "RedSpecial",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10355,8 +10355,8 @@
     "id_partido": "2025-J01-P02-marcade-vs-siddi",
     "p1": "Marcade",
     "p2": "Siddi",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 0,
     "replay": ""
   },
   {
@@ -10367,8 +10367,8 @@
     "id_partido": "2025-J01-P03-sf77-vs-ricky",
     "p1": "Sf77",
     "p2": "Ricky",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10379,8 +10379,8 @@
     "id_partido": "2025-J01-P04-kepasaco-vs-pablotarus",
     "p1": "Kepasaco",
     "p2": "Pablotarus",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10391,8 +10391,8 @@
     "id_partido": "2025-J01-P05-matatoros-vs-only",
     "p1": "Matatoros",
     "p2": "Only",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10403,8 +10403,8 @@
     "id_partido": "2025-J01-P06-sheriff-vs-lukas",
     "p1": "Sheriff",
     "p2": "Lukas",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 0,
     "replay": ""
   },
   {
@@ -10415,8 +10415,8 @@
     "id_partido": "2025-J01-P07-lokiyo-vs-pof",
     "p1": "Lokiyo",
     "p2": "Pof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10427,8 +10427,8 @@
     "id_partido": "2025-J01-P08-alexdms92-vs-kokkyo",
     "p1": "alexdms92",
     "p2": "Kokkyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10439,8 +10439,8 @@
     "id_partido": "2025-J01-P09-kinof-vs-carutox",
     "p1": "Kinof",
     "p2": "Carutox",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10451,8 +10451,8 @@
     "id_partido": "2025-J01-P10-darkslain-vs-johnmcclane",
     "p1": "Darkslain",
     "p2": "John McClane",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10463,8 +10463,8 @@
     "id_partido": "2025-J02-P01-redspecial-vs-siddi",
     "p1": "RedSpecial",
     "p2": "Siddi",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -10475,8 +10475,8 @@
     "id_partido": "2025-J02-P02-sf77-vs-vins",
     "p1": "Sf77",
     "p2": "Vins",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10487,8 +10487,8 @@
     "id_partido": "2025-J02-P03-pablotarus-vs-marcade",
     "p1": "Pablotarus",
     "p2": "Marcade",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10499,8 +10499,8 @@
     "id_partido": "2025-J02-P04-ricky-vs-matatoros",
     "p1": "Ricky",
     "p2": "Matatoros",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -10511,8 +10511,8 @@
     "id_partido": "2025-J02-P05-lukas-vs-kepasaco",
     "p1": "Lukas",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10523,8 +10523,8 @@
     "id_partido": "2025-J02-P06-only-vs-lokiyo",
     "p1": "Only",
     "p2": "Lokiyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10535,8 +10535,8 @@
     "id_partido": "2025-J02-P07-kokkyo-vs-sheriff",
     "p1": "Kokkyo",
     "p2": "Sheriff",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 0,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10547,8 +10547,8 @@
     "id_partido": "2025-J02-P08-pof-vs-kinof",
     "p1": "Pof",
     "p2": "Kinof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10559,8 +10559,8 @@
     "id_partido": "2025-J02-P09-johnmcclane-vs-alexdms92",
     "p1": "John McClane",
     "p2": "alexdms92",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10571,8 +10571,8 @@
     "id_partido": "2025-J02-P10-carutox-vs-darkslain",
     "p1": "Carutox",
     "p2": "Darkslain",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10583,8 +10583,8 @@
     "id_partido": "2025-J03-P01-sf77-vs-redspecial",
     "p1": "Sf77",
     "p2": "RedSpecial",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -10595,8 +10595,8 @@
     "id_partido": "2025-J03-P02-siddi-vs-pablotarus",
     "p1": "Siddi",
     "p2": "Pablotarus",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 0,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10607,8 +10607,8 @@
     "id_partido": "2025-J03-P03-matatoros-vs-vins",
     "p1": "Matatoros",
     "p2": "Vins",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10619,8 +10619,8 @@
     "id_partido": "2025-J03-P04-marcade-vs-lukas",
     "p1": "Marcade",
     "p2": "Lukas",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10631,8 +10631,8 @@
     "id_partido": "2025-J03-P05-lokiyo-vs-ricky",
     "p1": "Lokiyo",
     "p2": "Ricky",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 0,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10643,8 +10643,8 @@
     "id_partido": "2025-J03-P06-kepasaco-vs-kokkyo",
     "p1": "Kepasaco",
     "p2": "Kokkyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -10655,8 +10655,8 @@
     "id_partido": "2025-J03-P07-kinof-vs-only",
     "p1": "Kinof",
     "p2": "Only",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10667,8 +10667,8 @@
     "id_partido": "2025-J03-P08-sheriff-vs-johnmcclane",
     "p1": "Sheriff",
     "p2": "John McClane",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10679,8 +10679,8 @@
     "id_partido": "2025-J03-P09-darkslain-vs-pof",
     "p1": "Darkslain",
     "p2": "Pof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10691,8 +10691,8 @@
     "id_partido": "2025-J03-P10-alexdms92-vs-carutox",
     "p1": "alexdms92",
     "p2": "Carutox",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -10703,8 +10703,8 @@
     "id_partido": "2025-J04-P01-redspecial-vs-pablotarus",
     "p1": "RedSpecial",
     "p2": "Pablotarus",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10715,8 +10715,8 @@
     "id_partido": "2025-J04-P02-matatoros-vs-sf77",
     "p1": "Matatoros",
     "p2": "Sf77",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10727,8 +10727,8 @@
     "id_partido": "2025-J04-P03-lukas-vs-siddi",
     "p1": "Lukas",
     "p2": "Siddi",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 0,
     "replay": ""
   },
   {
@@ -10739,8 +10739,8 @@
     "id_partido": "2025-J04-P04-vins-vs-lokiyo",
     "p1": "Vins",
     "p2": "Lokiyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10751,8 +10751,8 @@
     "id_partido": "2025-J04-P05-kokkyo-vs-marcade",
     "p1": "Kokkyo",
     "p2": "Marcade",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10763,8 +10763,8 @@
     "id_partido": "2025-J04-P06-ricky-vs-kinof",
     "p1": "Ricky",
     "p2": "Kinof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10775,8 +10775,8 @@
     "id_partido": "2025-J04-P07-johnmcclane-vs-kepasaco",
     "p1": "John McClane",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10787,8 +10787,8 @@
     "id_partido": "2025-J04-P08-only-vs-darkslain",
     "p1": "Only",
     "p2": "Darkslain",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10799,8 +10799,8 @@
     "id_partido": "2025-J04-P09-carutox-vs-sheriff",
     "p1": "Carutox",
     "p2": "Sheriff",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10811,8 +10811,8 @@
     "id_partido": "2025-J04-P10-pof-vs-alexdms92",
     "p1": "Pof",
     "p2": "alexdms92",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10823,8 +10823,8 @@
     "id_partido": "2025-J05-P01-matatoros-vs-redspecial",
     "p1": "Matatoros",
     "p2": "RedSpecial",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10835,8 +10835,8 @@
     "id_partido": "2025-J05-P02-pablotarus-vs-lukas",
     "p1": "Pablotarus",
     "p2": "Lukas",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10847,8 +10847,8 @@
     "id_partido": "2025-J05-P03-lokiyo-vs-sf77",
     "p1": "Lokiyo",
     "p2": "Sf77",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10859,8 +10859,8 @@
     "id_partido": "2025-J05-P04-siddi-vs-kokkyo",
     "p1": "Siddi",
     "p2": "Kokkyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10871,8 +10871,8 @@
     "id_partido": "2025-J05-P05-kinof-vs-vins",
     "p1": "Kinof",
     "p2": "Vins",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -10883,8 +10883,8 @@
     "id_partido": "2025-J05-P06-marcade-vs-johnmcclane",
     "p1": "Marcade",
     "p2": "John McClane",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -10895,8 +10895,8 @@
     "id_partido": "2025-J05-P07-darkslain-vs-ricky",
     "p1": "Darkslain",
     "p2": "Ricky",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10907,8 +10907,8 @@
     "id_partido": "2025-J05-P08-kepasaco-vs-carutox",
     "p1": "Kepasaco",
     "p2": "Carutox",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10919,8 +10919,8 @@
     "id_partido": "2025-J05-P09-alexdms92-vs-only",
     "p1": "alexdms92",
     "p2": "Only",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10931,8 +10931,8 @@
     "id_partido": "2025-J05-P10-sheriff-vs-pof",
     "p1": "Sheriff",
     "p2": "Pof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -10943,8 +10943,8 @@
     "id_partido": "2025-J06-P01-redspecial-vs-lukas",
     "p1": "RedSpecial",
     "p2": "Lukas",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -10955,8 +10955,8 @@
     "id_partido": "2025-J06-P02-lokiyo-vs-matatoros",
     "p1": "Lokiyo",
     "p2": "Matatoros",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10967,8 +10967,8 @@
     "id_partido": "2025-J06-P03-kokkyo-vs-pablotarus",
     "p1": "Kokkyo",
     "p2": "Pablotarus",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -10979,8 +10979,8 @@
     "id_partido": "2025-J06-P04-sf77-vs-kinof",
     "p1": "Sf77",
     "p2": "Kinof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -10991,8 +10991,8 @@
     "id_partido": "2025-J06-P05-johnmcclane-vs-siddi",
     "p1": "John McClane",
     "p2": "Siddi",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -11003,8 +11003,8 @@
     "id_partido": "2025-J06-P06-vins-vs-darkslain",
     "p1": "Vins",
     "p2": "Darkslain",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11015,8 +11015,8 @@
     "id_partido": "2025-J06-P07-carutox-vs-marcade",
     "p1": "Carutox",
     "p2": "Marcade",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11027,8 +11027,8 @@
     "id_partido": "2025-J06-P08-ricky-vs-alexdms92",
     "p1": "Ricky",
     "p2": "alexdms92",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -11039,8 +11039,8 @@
     "id_partido": "2025-J06-P09-pof-vs-kepasaco",
     "p1": "Pof",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11051,8 +11051,8 @@
     "id_partido": "2025-J06-P10-only-vs-sheriff",
     "p1": "Only",
     "p2": "Sheriff",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -11063,8 +11063,8 @@
     "id_partido": "2025-J07-P01-lokiyo-vs-redspecial",
     "p1": "Lokiyo",
     "p2": "RedSpecial",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11075,8 +11075,8 @@
     "id_partido": "2025-J07-P02-lukas-vs-kokkyo",
     "p1": "Lukas",
     "p2": "Kokkyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11087,8 +11087,8 @@
     "id_partido": "2025-J07-P03-kinof-vs-matatoros",
     "p1": "Kinof",
     "p2": "Matatoros",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11099,8 +11099,8 @@
     "id_partido": "2025-J07-P04-pablotarus-vs-johnmcclane",
     "p1": "Pablotarus",
     "p2": "John McClane",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -11111,8 +11111,8 @@
     "id_partido": "2025-J07-P05-darkslain-vs-sf77",
     "p1": "Darkslain",
     "p2": "Sf77",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11123,8 +11123,8 @@
     "id_partido": "2025-J07-P06-siddi-vs-carutox",
     "p1": "Siddi",
     "p2": "Carutox",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11135,8 +11135,8 @@
     "id_partido": "2025-J07-P07-alexdms92-vs-vins",
     "p1": "alexdms92",
     "p2": "Vins",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -11147,8 +11147,8 @@
     "id_partido": "2025-J07-P08-marcade-vs-pof",
     "p1": "Marcade",
     "p2": "Pof",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -11159,8 +11159,8 @@
     "id_partido": "2025-J07-P09-sheriff-vs-ricky",
     "p1": "Sheriff",
     "p2": "Ricky",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 3,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11171,8 +11171,8 @@
     "id_partido": "2025-J07-P10-kepasaco-vs-only",
     "p1": "Kepasaco",
     "p2": "Only",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11183,8 +11183,8 @@
     "id_partido": "2025-J08-P01-redspecial-vs-kokkyo",
     "p1": "RedSpecial",
     "p2": "Kokkyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
@@ -11195,8 +11195,8 @@
     "id_partido": "2025-J08-P02-kinof-vs-lokiyo",
     "p1": "Kinof",
     "p2": "Lokiyo",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -11207,8 +11207,8 @@
     "id_partido": "2025-J08-P03-johnmcclane-vs-lukas",
     "p1": "John McClane",
     "p2": "Lukas",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11219,8 +11219,8 @@
     "id_partido": "2025-J08-P04-matatoros-vs-darkslain",
     "p1": "Matatoros",
     "p2": "Darkslain",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 2,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11231,8 +11231,8 @@
     "id_partido": "2025-J08-P05-carutox-vs-pablotarus",
     "p1": "Carutox",
     "p2": "Pablotarus",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 4,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11243,8 +11243,8 @@
     "id_partido": "2025-J08-P06-sf77-vs-alexdms92",
     "p1": "Sf77",
     "p2": "alexdms92",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 3,
     "replay": ""
   },
   {
@@ -11255,8 +11255,8 @@
     "id_partido": "2025-J08-P07-pof-vs-siddi",
     "p1": "Pof",
     "p2": "Siddi",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 1,
     "replay": ""
   },
   {
@@ -11267,8 +11267,8 @@
     "id_partido": "2025-J08-P08-vins-vs-sheriff",
     "p1": "Vins",
     "p2": "Sheriff",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 1,
+    "marcadorp2": 5,
     "replay": ""
   },
   {
@@ -11279,8 +11279,8 @@
     "id_partido": "2025-J08-P09-only-vs-marcade",
     "p1": "Only",
     "p2": "Marcade",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 4,
     "replay": ""
   },
   {
@@ -11291,8 +11291,8 @@
     "id_partido": "2025-J08-P10-ricky-vs-kepasaco",
     "p1": "Ricky",
     "p2": "Kepasaco",
-    "marcadorp1": "",
-    "marcadorp2": "",
+    "marcadorp1": 5,
+    "marcadorp2": 2,
     "replay": ""
   },
   {
