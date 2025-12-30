@@ -527,7 +527,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
   // ...
   // Temporada activa en rojo. Resultados en verde/rojo como siempre y link a replay si existe.
   let historialHtml = `
-    <p><span class="jugador-perfil-etiqueta">Historial directo:</span></p>
+    <p><span class="jugador-perfil-etiqueta">Historial</span></p>
     <p>No hay FT5 jugados entre ambos.</p>
   `;
 
@@ -624,7 +624,7 @@ function pintarProximoEnfrentamiento(jugadorId) {
             </div>
 
             <div class="hist-temporada-resumen">
-              <span class="hist-temporada-resumen-text"><strong>${s.ft5G}-${s.ft5P}</strong> / (${s.combG}-${s.combP})</span>
+              <span class="hist-temporada-resumen-text"><strong>${s.ft5G}-${s.ft5P}</strong>/(${s.combG}-${s.combP})</span>
             </div>
 
             <div class="hist-temporada-partidos">
