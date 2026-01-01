@@ -1526,3 +1526,33 @@ body.tema-temporada-no-activa .panel-clasificacion .tabla-clasificacion tbody tr
     letter-spacing: 0;
   }
 }
+/* ============================
+   HOME – CLASIFICACIÓN: codificación cromática en móvil
+   Objetivo: separar visualmente PTS / FT5 / Combates
+   ============================ */
+@media (max-width: 500px) {
+
+  /* PUNTOS (PTS) – rojo suave, valor clave */
+  .panel-clasificacion .td-puntos {
+    color: #ff6b6b;
+    font-weight: 700;
+  }
+
+  /* FT5 completo – amarillo suave (PJ | PG-PP (±DIF)) */
+  .panel-clasificacion .td-ft5 {
+    color: #ffd966;
+  }
+
+  /* Afinado interno FT5: jerarquía sutil */
+  .panel-clasificacion .td-ft5 .stats-pj {
+    color: #ffe599; /* un pelín más claro */
+    font-weight: 700;
+  }
+
+  .panel-clasificacion .td-ft5 .stats-rest {
+    color: #ffd966;
+    font-weight: 500;
+  }
+
+  /* Combates se mantiene neutro (blanco actual) */
+}
