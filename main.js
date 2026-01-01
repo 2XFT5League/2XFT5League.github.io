@@ -572,11 +572,15 @@ function pintarClasificacion() {
     const cp = safeNum(fila.cp);
     const difC = safeNum(fila.dif_c);
 
+    // En móvil real, quitamos el espacio antes del paréntesis para evitar overflow horizontal
+    // (PP(dif_p) y CP(dif_c)). En escritorio se mantiene el formato con espacio.
+    const sepParen = esMovilReal() ? "" : " ";
+
     // FT5 compacto:
     // - SIN espacios alrededor del separador "|"
     // - y SIN “aire” a la izquierda de PG-PP (anulamos el centrado de .stats-rest solo aquí)
-    const ft5Html = `<span class="stats stats-ft5"><span class="stats-pj">${pj}</span>|<span class="stats-rest" style="min-width:0;text-align:left;">${pg}-${pp} (${formatearSigno(difP)})</span></span>`;
-    const combHtml = `<span class="stats stats-comb"><span class="stats-rest">${cg}-${cp} (${formatearSigno(difC)})</span></span>`;
+    const ft5Html = `<span class="stats stats-ft5"><span class="stats-pj">${pj}</span>|<span class="stats-rest" style="min-width:0;text-align:left;">${pg}-${pp}${sepParen}(${formatearSigno(difP)})</span></span>`;
+    const combHtml = `<span class="stats stats-comb"><span class="stats-rest">${cg}-${cp}${sepParen}(${formatearSigno(difC)})</span></span>`;
 
     tr.innerHTML = `
       <td class="posicion">${safeNum(fila.posicion)}</td>
