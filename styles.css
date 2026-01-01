@@ -1063,28 +1063,36 @@ a.calendario-resultado-link:active {
     font-style: italic;
   }
 
-  /* Compactación real antes del scroll */
+  /* Compactación real antes del scroll (más agresiva y efectiva) */
   .tabla-clasificacion {
-    font-size: 12px;
-    min-width: 260px; /* baja a 340 si quieres aún más */
+    font-size: 11px;
+    min-width: 240px;
   }
 
   .tabla-clasificacion th,
   .tabla-clasificacion td {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .tabla-clasificacion th:nth-child(4),
   .tabla-clasificacion td:nth-child(4),
   .tabla-clasificacion th:nth-child(5),
   .tabla-clasificacion td:nth-child(5) {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
-  .stats-rest {
-    min-width: 8ch;
+  /* CLAVE: en móvil NO reservamos ancho para FT5/Combates */
+  .td-ft5 .stats-rest,
+  .td-comb .stats-rest {
+    min-width: 0 !important;
+    text-align: left !important;
+  }
+
+  .td-ft5 .stats-pj,
+  .td-comb .stats-pj {
+    min-width: 1ch !important;
   }
 
     .jugador-perfil {
